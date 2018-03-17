@@ -1,0 +1,10 @@
+platform :ios, '8.0'
+use_frameworks!
+target 'customFunction' do
+    pod 'IQKeyboardManager'
+    pod 'AFNetworking'
+    pod 'Masonry'
+    pod 'MJExtension'
+    pod 'SDWebImage'
+    pod 'FMDB'
+end

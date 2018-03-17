@@ -1,0 +1,89 @@
+
+
+/** 组件 **/
+
+# 网络层组件(CFHttpComponent)(实现方式:继承):
+    配置以下文件：
+    CFHttpClickBase+CFClickBaseErrorConfig.m
+    CFHttpConfiguration+CFClildrenConfig.m
+
+
+
+# 数据层持久化层组件(CFFMDBComponent):
+    配置以下文件：
+    CFFMDBConfig.m
+
+
+
+# 登录用户持久化组件(CFAuthorComponent):
+
+
+# 权限检测组件(CFAuthorPermissionComponent):
+    配置以下文件：
+    CFPermissionConfig.m
+
+
+# 路径获取组件(CFFilePathComponent):
+
+
+
+/** 延展 **/
+
+
+
+
+/** 宏 **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
