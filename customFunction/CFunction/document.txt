@@ -1,0 +1,93 @@
+
+
+/** 组件 **/
+
+# 网络层组件(CFHttpComponent)(实现方式:继承):
+    配置以下文件：
+    CFHttpClickBase+CFClickBaseErrorConfig.m
+    CFHttpConfiguration+CFClildrenConfig.m
+    使用:
+    1. 继承自 CFHttpClickBase
+    2. url配置写在配置文件中（CFHttpConfiguration+CFClildrenConfig.m）
+    2. 然后按照模版写子类写在CFClickChildrens文件夹中，CFHttpClickChilderHeader引用子类.h文件
+
+# 数据层持久化层组件(CFFMDBComponent):
+    配置以下文件：
+    1. CFFMDBConfig.m
+    2. 持久化的model需要遵循 CFFMDBModelProtocol 协议
+
+# 登录用户持久化组件(CFAuthorComponent):
+
+# 手机通讯录(CFModelContacts.h)
+    自定义 CFModelContacts 模型
+
+
+# 权限检测组件(CFAuthorPermissionComponent):
+    配置以下文件：
+    CFPermissionConfig.m
+
+
+# 路径获取组件(CFFilePathComponent):
+
+
+
+/** 延展 **/
+
+
+
+
+/** 宏 **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
