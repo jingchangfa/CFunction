@@ -57,6 +57,9 @@
 		3F24E49B205F7D690019A0BE /* CFContactsComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E49A205F7D690019A0BE /* CFContactsComponent.m */; };
 		3F24E49E205F7E230019A0BE /* CFModelContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E49D205F7E230019A0BE /* CFModelContacts.m */; };
 		3F24E4A2205F825D0019A0BE /* CFHttpLogInClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E4A1205F825D0019A0BE /* CFHttpLogInClick.m */; };
+		3F24E57D205F9E0A0019A0BE /* UIViewController+CFNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E57B205F9E0A0019A0BE /* UIViewController+CFNavController.m */; };
+		3F24E582205F9F4B0019A0BE /* CFNavButtonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E581205F9F4B0019A0BE /* CFNavButtonBuilder.m */; };
+		3F24E585205FA0200019A0BE /* CFNavCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E584205FA0200019A0BE /* CFNavCustomButton.m */; };
 		E5811838728025AC91294966 /* Pods_customFunction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */; };
 /* End PBXBuildFile section */
 
@@ -182,6 +185,12 @@
 		3F24E49D205F7E230019A0BE /* CFModelContacts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFModelContacts.m; sourceTree = "<group>"; };
 		3F24E4A0205F825D0019A0BE /* CFHttpLogInClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFHttpLogInClick.h; sourceTree = "<group>"; };
 		3F24E4A1205F825D0019A0BE /* CFHttpLogInClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFHttpLogInClick.m; sourceTree = "<group>"; };
+		3F24E57B205F9E0A0019A0BE /* UIViewController+CFNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CFNavController.m"; sourceTree = "<group>"; };
+		3F24E57C205F9E0A0019A0BE /* UIViewController+CFNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CFNavController.h"; sourceTree = "<group>"; };
+		3F24E580205F9F4B0019A0BE /* CFNavButtonBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFNavButtonBuilder.h; sourceTree = "<group>"; };
+		3F24E581205F9F4B0019A0BE /* CFNavButtonBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFNavButtonBuilder.m; sourceTree = "<group>"; };
+		3F24E583205FA0200019A0BE /* CFNavCustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFNavCustomButton.h; sourceTree = "<group>"; };
+		3F24E584205FA0200019A0BE /* CFNavCustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFNavCustomButton.m; sourceTree = "<group>"; };
 		6E045DAC9AC4363473FC5048 /* Pods-customFunction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.release.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.release.xcconfig"; sourceTree = "<group>"; };
 		8627F33615F4724A8E21F622 /* Pods-customFunction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.debug.xcconfig"; sourceTree = "<group>"; };
 		F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_customFunction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -310,6 +319,8 @@
 		3F24E3FF205CFD790019A0BE /* CFCategory */ = {
 			isa = PBXGroup;
 			children = (
+				3F24E57C205F9E0A0019A0BE /* UIViewController+CFNavController.h */,
+				3F24E57B205F9E0A0019A0BE /* UIViewController+CFNavController.m */,
 				3F24E413205D03480019A0BE /* NSString+CFEncryption.h */,
 				3F24E414205D03480019A0BE /* NSString+CFEncryption.m */,
 				3F24E479205F67B00019A0BE /* NSString+CFDetection.h */,
@@ -333,6 +344,7 @@
 		3F24E400205CFD790019A0BE /* CFComponent */ = {
 			isa = PBXGroup;
 			children = (
+				3F24E57E205F9E460019A0BE /* CFControllerComponent */,
 				3F24E48E205F7D240019A0BE /* CFContactsComponent */,
 				3F24E401205CFD790019A0BE /* CFAuthorComponent */,
 				3F24E402205CFD790019A0BE /* CFAuthorPermissionComponent */,
@@ -507,6 +519,17 @@
 			children = (
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		3F24E57E205F9E460019A0BE /* CFControllerComponent */ = {
+			isa = PBXGroup;
+			children = (
+				3F24E580205F9F4B0019A0BE /* CFNavButtonBuilder.h */,
+				3F24E581205F9F4B0019A0BE /* CFNavButtonBuilder.m */,
+				3F24E583205FA0200019A0BE /* CFNavCustomButton.h */,
+				3F24E584205FA0200019A0BE /* CFNavCustomButton.m */,
+			);
+			path = CFControllerComponent;
 			sourceTree = "<group>";
 		};
 		D786947947788875A1B92218 /* Pods */ = {
@@ -726,12 +749,14 @@
 				3F24E3C7205CEDEC0019A0BE /* ViewController.m in Sources */,
 				3F24E442205D20AD0019A0BE /* UserAccountStore.m in Sources */,
 				3F24E41C205D0D2B0019A0BE /* CFHttpConfiguration+CFClildrenConfig.m in Sources */,
+				3F24E57D205F9E0A0019A0BE /* UIViewController+CFNavController.m in Sources */,
 				3F24E415205D03480019A0BE /* NSString+CFEncryption.m in Sources */,
 				3F24E473205D2AA70019A0BE /* CFFMDBTypeChange.m in Sources */,
 				3F24E487205F6CD70019A0BE /* UIView+CFScreenShots.m in Sources */,
 				3F24E433205D1B580019A0BE /* PrefsPhoto.m in Sources */,
 				3F24E44B205D22700019A0BE /* CFFMDBManager.m in Sources */,
 				3F24E412205D02540019A0BE /* CFHttpCache.m in Sources */,
+				3F24E585205FA0200019A0BE /* CFNavCustomButton.m in Sources */,
 				3F24E431205D1B580019A0BE /* PrefsCamera.m in Sources */,
 				3F24E49E205F7E230019A0BE /* CFModelContacts.m in Sources */,
 				3F24E435205D1B580019A0BE /* PrefsMicrophone.m in Sources */,
@@ -763,6 +788,7 @@
 				3F24E481205F6AF80019A0BE /* NSString+CFTypeConversion.m in Sources */,
 				3F24E498205F7D480019A0BE /* YContactsManager.m in Sources */,
 				3F24E484205F6BD40019A0BE /* UIColor+CFColor.m in Sources */,
+				3F24E582205F9F4B0019A0BE /* CFNavButtonBuilder.m in Sources */,
 				3F24E475205D2AA70019A0BE /* CFFMDBModelToSQL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
