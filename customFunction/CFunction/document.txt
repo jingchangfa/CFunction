@@ -6,16 +6,18 @@
     配置以下文件：
     CFHttpClickBase+CFClickBaseErrorConfig.m
     CFHttpConfiguration+CFClildrenConfig.m
-
-
+    使用:
+    1. 继承自 CFHttpClickBase
+    2. url配置写在配置文件中（CFHttpConfiguration+CFClildrenConfig.m）
+    2. 然后按照模版写子类写在CFClickChildrens文件夹中，CFHttpClickChilderHeader引用子类.h文件
 
 # 数据层持久化层组件(CFFMDBComponent):
     配置以下文件：
     CFFMDBConfig.m
 
 
-
 # 登录用户持久化组件(CFAuthorComponent):
+
 
 
 # 权限检测组件(CFAuthorPermissionComponent):

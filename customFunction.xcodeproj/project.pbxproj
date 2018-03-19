@@ -140,6 +140,9 @@
 		3F24E46D205D2AA70019A0BE /* CFFMDBConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFMDBConfiguration.h; sourceTree = "<group>"; };
 		3F24E46E205D2AA70019A0BE /* CFFMDBRunTimeModelInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFMDBRunTimeModelInterface.h; sourceTree = "<group>"; };
 		3F24E46F205D2AA70019A0BE /* CFFMDBModelToSQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFFMDBModelToSQL.m; sourceTree = "<group>"; };
+		3F24E476205F61D20019A0BE /* CFunctionHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFunctionHeader.h; sourceTree = "<group>"; };
+		3F24E477205F63710019A0BE /* CFHttpClickChilderHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFHttpClickChilderHeader.h; sourceTree = "<group>"; };
+		3F24E478205F643C0019A0BE /* CFDefindHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFDefindHeader.h; sourceTree = "<group>"; };
 		6E045DAC9AC4363473FC5048 /* Pods-customFunction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.release.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.release.xcconfig"; sourceTree = "<group>"; };
 		8627F33615F4724A8E21F622 /* Pods-customFunction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.debug.xcconfig"; sourceTree = "<group>"; };
 		F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_customFunction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				3F24E3F7205CF1CA0019A0BE /* document.txt */,
+				3F24E476205F61D20019A0BE /* CFunctionHeader.h */,
 				3F24E3FF205CFD790019A0BE /* CFCategory */,
 				3F24E400205CFD790019A0BE /* CFComponent */,
 				3F24E3FE205CFD790019A0BE /* CFDefind */,
@@ -258,6 +262,7 @@
 		3F24E3FE205CFD790019A0BE /* CFDefind */ = {
 			isa = PBXGroup;
 			children = (
+				3F24E478205F643C0019A0BE /* CFDefindHeader.h */,
 			);
 			path = CFDefind;
 			sourceTree = "<group>";
@@ -355,10 +360,11 @@
 		3F24E416205D09AA0019A0BE /* CFClickChildrens */ = {
 			isa = PBXGroup;
 			children = (
-				3F24E41A205D0D2B0019A0BE /* CFHttpConfiguration+CFClildrenConfig.h */,
-				3F24E41B205D0D2B0019A0BE /* CFHttpConfiguration+CFClildrenConfig.m */,
+				3F24E477205F63710019A0BE /* CFHttpClickChilderHeader.h */,
 				3F24E420205D161B0019A0BE /* CFHttpClickBase+CFClickBaseErrorConfig.h */,
 				3F24E421205D161B0019A0BE /* CFHttpClickBase+CFClickBaseErrorConfig.m */,
+				3F24E41A205D0D2B0019A0BE /* CFHttpConfiguration+CFClildrenConfig.h */,
+				3F24E41B205D0D2B0019A0BE /* CFHttpConfiguration+CFClildrenConfig.m */,
 			);
 			path = CFClickChildrens;
 			sourceTree = "<group>";

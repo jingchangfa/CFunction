@@ -9,7 +9,8 @@
 #import "CFFMDBRunTimeModelInterface.h"
 #import <objc/runtime.h>
 #import "CFFMDBModelProtocol.h"
-#define CFException(class,reasion) @throw [NSException exceptionWithName:class reason:reasion userInfo:nil];
+#import "CFDefindHeader.h"
+
 
 @implementation CFFMDBRunTimeModelInterface
 + (CFFMDBRunTimeModelInterface *)ModelInterfaceCacheByModelClassName:(NSString *)className{

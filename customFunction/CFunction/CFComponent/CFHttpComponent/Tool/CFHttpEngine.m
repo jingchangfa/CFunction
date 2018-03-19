@@ -9,12 +9,8 @@
 #import "CFHttpEngine.h"
 #import "HMFJSONResponseSerializerWithData.h"
 #import "CFHttpCache.h"
+#import "CFDefindHeader.h"
 
-#ifdef DEBUG
-#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
-#else
-#define NSLog(FORMAT, ...) nil
-#endif
 
 @interface CFHttpEngine ()
 @property (nonatomic, strong) NSURLSessionTask * sessionTask;

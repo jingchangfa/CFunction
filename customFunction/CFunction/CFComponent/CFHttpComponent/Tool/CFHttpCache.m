@@ -7,8 +7,7 @@
 //
 #import "CFHttpCache.h"
 #import "NSString+CFEncryption.h"
-#define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
-
+#import "CFDefindHeader.h"
 
 @implementation CFHttpCache
 + (void)CFHttpCacheSaveResponseObject:(id)responseObject
