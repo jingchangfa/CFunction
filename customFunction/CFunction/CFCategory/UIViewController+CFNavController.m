@@ -82,7 +82,7 @@
     UIBarButtonItem *buttonItem = [CFNavButtonBuilder ImageButtonByImageName:imageName AndBlock:block];
     self.navigationItem.leftBarButtonItem = buttonItem;
     return buttonItem;
-
+    
 }
 - (UIBarButtonItem *)addNavLeftButtonByTitle:(NSString *)title AndTitleColor:(UIColor *)color AndClickBlock:(void(^)(UIButton *button))block{
     UIBarButtonItem *buttonItem = [CFNavButtonBuilder TitleButtonByTitle:title AndTitleColor:color AndBlock:block];
@@ -152,7 +152,12 @@
 #pragma mark 替换viewwillapp
 - (void)CFViewWillAppear:(BOOL)animated{
     [self CFViewWillAppear:animated];
-    [self relayoutSubViewContent];
+    SEL selector =  NSSelectorFromString(@"relayoutSubViewContent");
+    if ([self respondsToSelector:selector]) {
+        IMP imp = [self methodForSelector:selector];
+        void (*function)(id, SEL) = (__typeof__(function))imp;
+        function(self, selector);
+    }
 }
 + (void)replaceViewWillAppearMethod{
     SEL originalSelector = @selector(viewWillAppear:);
@@ -171,10 +176,27 @@
 #pragma mark 替换didload
 - (void)CFViewDidLoad{
     [self CFViewDidLoad];
-    [self setBackgroundColor:[UIColor whiteColor]];
-    [self setColtro];
-    [self bankViewInit];
-    [self getModel];
+    SEL selectorColtro =  NSSelectorFromString(@"setColtro");
+    if ([self respondsToSelector:selectorColtro]) {
+        [self setBackgroundColor:[UIColor whiteColor]];
+        IMP imp = [self methodForSelector:selectorColtro];
+        void (*function)(id, SEL) = (__typeof__(function))imp;
+        function(self, selectorColtro);
+    }
+    
+    SEL selectorView =  NSSelectorFromString(@"bankViewInit");
+    if ([self respondsToSelector:selectorView]) {
+        IMP imp = [self methodForSelector:selectorView];
+        void (*function)(id, SEL) = (__typeof__(function))imp;
+        function(self, selectorView);
+    }
+    
+    SEL selectorModel =  NSSelectorFromString(@"getModel");
+    if ([self respondsToSelector:selectorModel]) {
+        IMP imp = [self methodForSelector:selectorModel];
+        void (*function)(id, SEL) = (__typeof__(function))imp;
+        function(self, selectorModel);
+    }
 }
 + (void)replaceViewDidLoadMethod{
     SEL originalSelector = @selector(viewDidLoad);
@@ -190,20 +212,18 @@
         method_exchangeImplementations(originalMethod, swizzledMethod);
     }
 }
-
-// 规范格式
-- (void)setColtro{
-    
-}// 设置控制器导航栏
-- (void)getModel{
-    
-}// 网络请求以及MV绑定
-- (void)bankViewInit{
-    
-}// V设置初始化
-- (void)relayoutSubViewContent{
-    
-}// V 布局
-
-
+//// 规范格式
+//- (void)setColtro{
+//
+//}// 设置控制器导航栏
+//- (void)getModel{
+//
+//}// 网络请求以及MV绑定
+//- (void)bankViewInit{
+//
+//}// V设置初始化
+//- (void)relayoutSubViewContent{
+//
+//}// V 布局
 @end
+
