@@ -51,6 +51,11 @@
 		3F24E487205F6CD70019A0BE /* UIView+CFScreenShots.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E486205F6CD70019A0BE /* UIView+CFScreenShots.m */; };
 		3F24E48A205F6D500019A0BE /* UIImage+CFCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E489205F6D500019A0BE /* UIImage+CFCamera.m */; };
 		3F24E48D205F75150019A0BE /* NSNumber+CFNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E48C205F75150019A0BE /* NSNumber+CFNumber.m */; };
+		3F24E496205F7D480019A0BE /* YContactObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E491205F7D470019A0BE /* YContactObject.m */; };
+		3F24E497205F7D480019A0BE /* YContactObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E492205F7D470019A0BE /* YContactObjectManager.m */; };
+		3F24E498205F7D480019A0BE /* YContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E493205F7D480019A0BE /* YContactsManager.m */; };
+		3F24E49B205F7D690019A0BE /* CFContactsComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E49A205F7D690019A0BE /* CFContactsComponent.m */; };
+		3F24E49E205F7E230019A0BE /* CFModelContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E49D205F7E230019A0BE /* CFModelContacts.m */; };
 		E5811838728025AC91294966 /* Pods_customFunction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */; };
 /* End PBXBuildFile section */
 
@@ -164,6 +169,16 @@
 		3F24E489205F6D500019A0BE /* UIImage+CFCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CFCamera.m"; sourceTree = "<group>"; };
 		3F24E48B205F75150019A0BE /* NSNumber+CFNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+CFNumber.h"; sourceTree = "<group>"; };
 		3F24E48C205F75150019A0BE /* NSNumber+CFNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+CFNumber.m"; sourceTree = "<group>"; };
+		3F24E490205F7D470019A0BE /* YContactObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YContactObject.h; sourceTree = "<group>"; };
+		3F24E491205F7D470019A0BE /* YContactObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YContactObject.m; sourceTree = "<group>"; };
+		3F24E492205F7D470019A0BE /* YContactObjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YContactObjectManager.m; sourceTree = "<group>"; };
+		3F24E493205F7D480019A0BE /* YContactsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YContactsManager.m; sourceTree = "<group>"; };
+		3F24E494205F7D480019A0BE /* YContactObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YContactObjectManager.h; sourceTree = "<group>"; };
+		3F24E495205F7D480019A0BE /* YContactsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YContactsManager.h; sourceTree = "<group>"; };
+		3F24E499205F7D690019A0BE /* CFContactsComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFContactsComponent.h; sourceTree = "<group>"; };
+		3F24E49A205F7D690019A0BE /* CFContactsComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFContactsComponent.m; sourceTree = "<group>"; };
+		3F24E49C205F7E230019A0BE /* CFModelContacts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFModelContacts.h; sourceTree = "<group>"; };
+		3F24E49D205F7E230019A0BE /* CFModelContacts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFModelContacts.m; sourceTree = "<group>"; };
 		6E045DAC9AC4363473FC5048 /* Pods-customFunction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.release.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.release.xcconfig"; sourceTree = "<group>"; };
 		8627F33615F4724A8E21F622 /* Pods-customFunction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.debug.xcconfig"; sourceTree = "<group>"; };
 		F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_customFunction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -314,6 +329,7 @@
 		3F24E400205CFD790019A0BE /* CFComponent */ = {
 			isa = PBXGroup;
 			children = (
+				3F24E48E205F7D240019A0BE /* CFContactsComponent */,
 				3F24E401205CFD790019A0BE /* CFAuthorComponent */,
 				3F24E402205CFD790019A0BE /* CFAuthorPermissionComponent */,
 				3F24E403205CFD790019A0BE /* CFFilePathComponent */,
@@ -451,6 +467,31 @@
 				3F24E46A205D2AA70019A0BE /* CFFMDBTypeChange.m */,
 				3F24E465205D2AA60019A0BE /* CFFMDBSQLStatement.h */,
 				3F24E46B205D2AA70019A0BE /* CFFMDBSQLStatement.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		3F24E48E205F7D240019A0BE /* CFContactsComponent */ = {
+			isa = PBXGroup;
+			children = (
+				3F24E49C205F7E230019A0BE /* CFModelContacts.h */,
+				3F24E49D205F7E230019A0BE /* CFModelContacts.m */,
+				3F24E499205F7D690019A0BE /* CFContactsComponent.h */,
+				3F24E49A205F7D690019A0BE /* CFContactsComponent.m */,
+				3F24E48F205F7D3B0019A0BE /* Tool */,
+			);
+			path = CFContactsComponent;
+			sourceTree = "<group>";
+		};
+		3F24E48F205F7D3B0019A0BE /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				3F24E490205F7D470019A0BE /* YContactObject.h */,
+				3F24E491205F7D470019A0BE /* YContactObject.m */,
+				3F24E494205F7D480019A0BE /* YContactObjectManager.h */,
+				3F24E492205F7D470019A0BE /* YContactObjectManager.m */,
+				3F24E495205F7D480019A0BE /* YContactsManager.h */,
+				3F24E493205F7D480019A0BE /* YContactsManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -667,6 +708,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F24E438205D1B8D0019A0BE /* CFAuthorPermissions.m in Sources */,
+				3F24E497205F7D480019A0BE /* YContactObjectManager.m in Sources */,
 				3F24E445205D20B40019A0BE /* UserAccountInfoAdditional.m in Sources */,
 				3F24E3C7205CEDEC0019A0BE /* ViewController.m in Sources */,
 				3F24E442205D20AD0019A0BE /* UserAccountStore.m in Sources */,
@@ -678,8 +720,10 @@
 				3F24E44B205D22700019A0BE /* CFFMDBManager.m in Sources */,
 				3F24E412205D02540019A0BE /* CFHttpCache.m in Sources */,
 				3F24E431205D1B580019A0BE /* PrefsCamera.m in Sources */,
+				3F24E49E205F7E230019A0BE /* CFModelContacts.m in Sources */,
 				3F24E435205D1B580019A0BE /* PrefsMicrophone.m in Sources */,
 				3F24E43F205D20790019A0BE /* UserAccount.m in Sources */,
+				3F24E49B205F7D690019A0BE /* CFContactsComponent.m in Sources */,
 				3F24E3D2205CEDEC0019A0BE /* main.m in Sources */,
 				3F24E470205D2AA70019A0BE /* CFFMDBSQLToModel.m in Sources */,
 				3F24E451205D26B80019A0BE /* CFFMDBComponent.m in Sources */,
@@ -697,11 +741,13 @@
 				3F24E40C205D00420019A0BE /* CFHttpEngine.m in Sources */,
 				3F24E471205D2AA70019A0BE /* CFFMDBRunTimeModelInterface.m in Sources */,
 				3F24E434205D1B580019A0BE /* PrefsAddressBook.m in Sources */,
+				3F24E496205F7D480019A0BE /* YContactObject.m in Sources */,
 				3F24E47B205F67B00019A0BE /* NSString+CFDetection.m in Sources */,
 				3F24E3C4205CEDEC0019A0BE /* AppDelegate.m in Sources */,
 				3F24E48A205F6D500019A0BE /* UIImage+CFCamera.m in Sources */,
 				3F24E448205D21850019A0BE /* CFFMDBConfig.m in Sources */,
 				3F24E481205F6AF80019A0BE /* NSString+CFTypeConversion.m in Sources */,
+				3F24E498205F7D480019A0BE /* YContactsManager.m in Sources */,
 				3F24E484205F6BD40019A0BE /* UIColor+CFColor.m in Sources */,
 				3F24E475205D2AA70019A0BE /* CFFMDBModelToSQL.m in Sources */,
 			);

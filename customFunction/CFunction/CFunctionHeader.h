@@ -27,5 +27,6 @@
 #import "CFFMDBComponent.h" // 数据库存储
 #import "CFHttpClickBase.h"
 #import "CFHttpClickChilderHeader.h" // 网络请求
+#import "CFContactsComponent.h"// 联系人
 
 #endif /* CFunctionHeader_h */

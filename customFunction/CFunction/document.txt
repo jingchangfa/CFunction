@@ -18,6 +18,8 @@
 
 # 登录用户持久化组件(CFAuthorComponent):
 
+# 手机通讯录(CFModelContacts.h)
+    自定义 CFModelContacts 模型
 
 
 # 权限检测组件(CFAuthorPermissionComponent):
