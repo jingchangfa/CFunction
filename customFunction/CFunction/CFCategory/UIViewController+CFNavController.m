@@ -171,6 +171,7 @@
 #pragma mark 替换didload
 - (void)CFViewDidLoad{
     [self CFViewDidLoad];
+    [self setBackgroundColor:[UIColor whiteColor]];
     [self setColtro];
     [self bankViewInit];
     [self getModel];
