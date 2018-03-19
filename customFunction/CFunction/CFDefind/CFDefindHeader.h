@@ -21,9 +21,9 @@
 // 尺寸
 #define CF_SCREEN_HEIGHT  ([UIScreen mainScreen].bounds.size.height)
 #define CF_SCREEN_WIDTH   ([UIScreen mainScreen].bounds.size.width)
-#define CF_SIZE_SCREEN_HEIGHT    (PCH_SCREEN_HEIGHT/667)
-#define CF_SIZE_SCREEN_WIDTH     (PCH_SCREEN_WIDTH/375)
-#define CF_BitMap_BY_SIZE(height) (((height)/2.0f)*PCH_SIZE_SCREEN_WIDTH)//像素为单位
+#define CF_SIZE_SCREEN_HEIGHT    (CF_SCREEN_HEIGHT/667)
+#define CF_SIZE_SCREEN_WIDTH     (CF_SCREEN_WIDTH/375)
+#define CF_BitMap_BY_SIZE(height) (((height)/2.0f)*CF_SIZE_SCREEN_WIDTH)//像素为单位
 
 #define IS_IPHONEX (([[UIScreen mainScreen] bounds].size.height - 812) ? NO : YES)
 #define CF_NAV_VIEW_OFFSET ((IS_IPHONEX) ? (44) : (20))

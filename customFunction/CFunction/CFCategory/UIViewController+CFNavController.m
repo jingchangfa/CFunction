@@ -108,7 +108,7 @@
         [self replaceViewDidLoadMethod];
         [self replaceViewWillAppearMethod];
         [self replaceViewWillDisappearMethod];
-        [self replaceDeallocMethod];
+//        [self replaceDeallocMethod];
     });
 }
 #pragma mark 替换delloc
