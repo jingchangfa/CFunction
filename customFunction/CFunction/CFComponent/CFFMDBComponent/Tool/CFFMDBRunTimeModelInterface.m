@@ -40,9 +40,10 @@
         return [_modelClass mainKey];
     }
     NSString *mainKey = [[[_modelClass alloc] init] mainKey];
-    if (mainKey.length == 0) {
-        CFException(NSStringFromClass(_modelClass),@"必须至少实现一个获取主键的方法")
-    }
+    if (mainKey.length == 0) mainKey = @"ID";
+//    {
+//        CFException(NSStringFromClass(_modelClass),@"必须至少实现一个获取主键的方法")
+//    }
     return mainKey;
 }
 - (NSString *)mainKeyPropertyType{
@@ -71,7 +72,7 @@
     NSMutableArray *modelPropertyNameArray = [NSMutableArray array];
     NSMutableArray *modelPropertyArray = [NSMutableArray array];
     for (NSString *propertyNameString in self.modelPropertyNameAndTypeDictionary.allKeys) {
-        NSString *selectorString = [NSString stringWithFormat:@"%@JCFModel",propertyNameString];
+        NSString *selectorString = [NSString stringWithFormat:@"%@CFModel",propertyNameString];
         SEL selector =  NSSelectorFromString(selectorString);
         if ([_modelClass respondsToSelector:selector]) {
             Class class = [self propertyClassBy:selector];
@@ -100,7 +101,7 @@
     NSMutableArray *modelArrayPropertyNameArray = [NSMutableArray array];
     NSMutableArray *modelArrayPropertyArray = [NSMutableArray array];
     for (NSString *propertyNameString in self.modelPropertyNameAndTypeDictionary.allKeys) {
-        NSString *selectorString = [NSString stringWithFormat:@"%@JCFModelArray",propertyNameString];
+        NSString *selectorString = [NSString stringWithFormat:@"%@CFModelArray",propertyNameString];
         SEL selector =  NSSelectorFromString(selectorString);
         if ([_modelClass respondsToSelector:selector]) {
             Class class = [self propertyClassBy:selector];
@@ -126,10 +127,12 @@
     if ([class respondsToSelector:@selector(modelBaseClass)]) {//相应类方法
         baseClass = [class modelBaseClass];
     }
+    NSArray *pubTransArray = @[@"debugDescription",@"description",@"hash",@"superclass"];
     do {
-        NSArray *transientsArray = nil;
+        NSMutableArray *transientsArray = pubTransArray.mutableCopy;
         if ([class respondsToSelector:@selector(transients)]) {//相应类方法
-            transientsArray = [class transients];
+            NSArray *transientClassArray = [class transients];
+            if (transientClassArray) [transientsArray addObjectsFromArray:transientClassArray];
         }
         NSDictionary *oneClassDic = [self getPropertyNameAndTypeByClass:class AndTransients:transientsArray];
         [propertysMuDic setValuesForKeysWithDictionary:oneClassDic];//添加

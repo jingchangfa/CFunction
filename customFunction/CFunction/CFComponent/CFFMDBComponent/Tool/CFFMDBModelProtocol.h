@@ -11,12 +11,15 @@
 @protocol CFFMDBModelProtocol <NSObject>
 // model类中有一些property不需要创建数据库字段重写此方法 (默认 @[@"debugDescription",@"description",@"hash",@"superclass"])
 + (NSArray *)transients;
+
 // 下面两个当model存在嵌套时重写
 #pragma mark +(Class)属性名+CFModel
 #pragma mark +(Class)属性名+CFModelArray
-// 设置主键 (默认 ID)
+
+// 设置主键,必须实现(默认ID注意！！ 如果存储失败则看此处)
 + (NSString *)mainKey;
 - (NSString *)mainKey;
+
 // 指定父类 (默认 NSObject)
 + (Class)modelBaseClass;
 @end
