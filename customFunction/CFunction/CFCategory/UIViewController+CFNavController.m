@@ -107,7 +107,27 @@
     dispatch_once(&onceToken, ^{
         [self replaceViewDidLoadMethod];
         [self replaceViewWillAppearMethod];
+        [self replaceDeallocMethod];
     });
+}
+#pragma mark 替换delloc
+- (void)CFDealloc{
+    [self CFDealloc];
+    NSLog(@"%@-----delloc",NSStringFromClass(self.class));
+}
++ (void)replaceDeallocMethod{
+    SEL originalSelector = NSSelectorFromString(@"dealloc");
+    SEL swizzledSelector = @selector(CFDealloc);
+    Class class = [self class];
+    
+    Method originalMethod = class_getInstanceMethod(class, originalSelector);
+    Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+    BOOL success = class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+    if (success) {
+        class_replaceMethod(class, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+    } else {
+        method_exchangeImplementations(originalMethod, swizzledMethod);
+    }
 }
 #pragma mark 替换viewwillapp
 - (void)CFViewWillAppear:(BOOL)animated{
