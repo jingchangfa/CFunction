@@ -18,10 +18,9 @@
 #import "UIImage+CFCamera.h"
 #import "NSNumber+CFNumber.h"
 
-
-
 // 宏
 #import "CFDefindHeader.h"
+
 // 组件
 #import "UserAccount.h" // 用户持久化
 #import "CFAuthorPermissions.h" // 权限检测
