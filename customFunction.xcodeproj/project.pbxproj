@@ -60,6 +60,7 @@
 		3F24E57D205F9E0A0019A0BE /* UIViewController+CFNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E57B205F9E0A0019A0BE /* UIViewController+CFNavController.m */; };
 		3F24E582205F9F4B0019A0BE /* CFNavButtonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E581205F9F4B0019A0BE /* CFNavButtonBuilder.m */; };
 		3F24E585205FA0200019A0BE /* CFNavCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E584205FA0200019A0BE /* CFNavCustomButton.m */; };
+		3FF445B6205FB5F200C261A8 /* UIView+CFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF445B4205FB5F200C261A8 /* UIView+CFView.m */; };
 		E5811838728025AC91294966 /* Pods_customFunction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */; };
 /* End PBXBuildFile section */
 
@@ -191,6 +192,8 @@
 		3F24E581205F9F4B0019A0BE /* CFNavButtonBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFNavButtonBuilder.m; sourceTree = "<group>"; };
 		3F24E583205FA0200019A0BE /* CFNavCustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFNavCustomButton.h; sourceTree = "<group>"; };
 		3F24E584205FA0200019A0BE /* CFNavCustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFNavCustomButton.m; sourceTree = "<group>"; };
+		3FF445B4205FB5F200C261A8 /* UIView+CFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CFView.m"; sourceTree = "<group>"; };
+		3FF445B5205FB5F200C261A8 /* UIView+CFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CFView.h"; sourceTree = "<group>"; };
 		6E045DAC9AC4363473FC5048 /* Pods-customFunction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.release.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.release.xcconfig"; sourceTree = "<group>"; };
 		8627F33615F4724A8E21F622 /* Pods-customFunction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.debug.xcconfig"; sourceTree = "<group>"; };
 		F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_customFunction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -319,8 +322,6 @@
 		3F24E3FF205CFD790019A0BE /* CFCategory */ = {
 			isa = PBXGroup;
 			children = (
-				3F24E57C205F9E0A0019A0BE /* UIViewController+CFNavController.h */,
-				3F24E57B205F9E0A0019A0BE /* UIViewController+CFNavController.m */,
 				3F24E413205D03480019A0BE /* NSString+CFEncryption.h */,
 				3F24E414205D03480019A0BE /* NSString+CFEncryption.m */,
 				3F24E479205F67B00019A0BE /* NSString+CFDetection.h */,
@@ -337,6 +338,10 @@
 				3F24E489205F6D500019A0BE /* UIImage+CFCamera.m */,
 				3F24E48B205F75150019A0BE /* NSNumber+CFNumber.h */,
 				3F24E48C205F75150019A0BE /* NSNumber+CFNumber.m */,
+				3F24E57C205F9E0A0019A0BE /* UIViewController+CFNavController.h */,
+				3F24E57B205F9E0A0019A0BE /* UIViewController+CFNavController.m */,
+				3FF445B5205FB5F200C261A8 /* UIView+CFView.h */,
+				3FF445B4205FB5F200C261A8 /* UIView+CFView.m */,
 			);
 			path = CFCategory;
 			sourceTree = "<group>";
@@ -777,6 +782,7 @@
 				3F24E422205D161B0019A0BE /* CFHttpClickBase+CFClickBaseErrorConfig.m in Sources */,
 				3F24E430205D1B580019A0BE /* BasePrefs.m in Sources */,
 				3F24E43B205D1C940019A0BE /* CFPermissionConfig.m in Sources */,
+				3FF445B6205FB5F200C261A8 /* UIView+CFView.m in Sources */,
 				3F24E40C205D00420019A0BE /* CFHttpEngine.m in Sources */,
 				3F24E471205D2AA70019A0BE /* CFFMDBRunTimeModelInterface.m in Sources */,
 				3F24E434205D1B580019A0BE /* PrefsAddressBook.m in Sources */,
