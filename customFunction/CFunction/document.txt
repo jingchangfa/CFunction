@@ -13,8 +13,8 @@
 
 # 数据层持久化层组件(CFFMDBComponent):
     配置以下文件：
-    CFFMDBConfig.m
-
+    1. CFFMDBConfig.m
+    2. 持久化的model需要遵循 CFFMDBModelProtocol 协议
 
 # 登录用户持久化组件(CFAuthorComponent):
 

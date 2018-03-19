@@ -8,11 +8,25 @@
 
 #ifndef CFunctionHeader_h
 #define CFunctionHeader_h
+// 延展
+#import "NSString+CFEncryption.h"
+#import "NSString+CFDetection.h"
+#import "NSString+CFJSONConversion.h"
+#import "NSString+CFTypeConversion.h"
+#import "UIColor+CFColor.h"
+#import "UIView+CFScreenShots.h"
+#import "UIImage+CFCamera.h"
+#import "NSNumber+CFNumber.h"
+
+
+
+// 宏
+#import "CFDefindHeader.h"
+// 组件
 #import "UserAccount.h" // 用户持久化
 #import "CFAuthorPermissions.h" // 权限检测
 #import "CFFMDBComponent.h" // 数据库存储
 #import "CFHttpClickBase.h"
 #import "CFHttpClickChilderHeader.h" // 网络请求
-
 
 #endif /* CFunctionHeader_h */
