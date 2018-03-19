@@ -56,6 +56,7 @@
 		3F24E498205F7D480019A0BE /* YContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E493205F7D480019A0BE /* YContactsManager.m */; };
 		3F24E49B205F7D690019A0BE /* CFContactsComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E49A205F7D690019A0BE /* CFContactsComponent.m */; };
 		3F24E49E205F7E230019A0BE /* CFModelContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E49D205F7E230019A0BE /* CFModelContacts.m */; };
+		3F24E4A2205F825D0019A0BE /* CFHttpLogInClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E4A1205F825D0019A0BE /* CFHttpLogInClick.m */; };
 		E5811838728025AC91294966 /* Pods_customFunction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */; };
 /* End PBXBuildFile section */
 
@@ -179,6 +180,8 @@
 		3F24E49A205F7D690019A0BE /* CFContactsComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFContactsComponent.m; sourceTree = "<group>"; };
 		3F24E49C205F7E230019A0BE /* CFModelContacts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFModelContacts.h; sourceTree = "<group>"; };
 		3F24E49D205F7E230019A0BE /* CFModelContacts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFModelContacts.m; sourceTree = "<group>"; };
+		3F24E4A0205F825D0019A0BE /* CFHttpLogInClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFHttpLogInClick.h; sourceTree = "<group>"; };
+		3F24E4A1205F825D0019A0BE /* CFHttpLogInClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFHttpLogInClick.m; sourceTree = "<group>"; };
 		6E045DAC9AC4363473FC5048 /* Pods-customFunction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.release.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.release.xcconfig"; sourceTree = "<group>"; };
 		8627F33615F4724A8E21F622 /* Pods-customFunction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.debug.xcconfig"; sourceTree = "<group>"; };
 		F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_customFunction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,6 +248,7 @@
 			children = (
 				3F24E3C2205CEDEC0019A0BE /* AppDelegate.h */,
 				3F24E3C3205CEDEC0019A0BE /* AppDelegate.m */,
+				3F24E49F205F807E0019A0BE /* Controller */,
 				3F24E3F6205CF1290019A0BE /* CFusing */,
 				3F24E3F5205CF1290019A0BE /* CFunction */,
 				3F24E3C5205CEDEC0019A0BE /* ViewController.h */,
@@ -416,6 +420,8 @@
 				3F24E421205D161B0019A0BE /* CFHttpClickBase+CFClickBaseErrorConfig.m */,
 				3F24E41A205D0D2B0019A0BE /* CFHttpConfiguration+CFClildrenConfig.h */,
 				3F24E41B205D0D2B0019A0BE /* CFHttpConfiguration+CFClildrenConfig.m */,
+				3F24E4A0205F825D0019A0BE /* CFHttpLogInClick.h */,
+				3F24E4A1205F825D0019A0BE /* CFHttpLogInClick.m */,
 			);
 			path = CFClickChildrens;
 			sourceTree = "<group>";
@@ -494,6 +500,13 @@
 				3F24E493205F7D480019A0BE /* YContactsManager.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		3F24E49F205F807E0019A0BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		D786947947788875A1B92218 /* Pods */ = {
@@ -724,6 +737,7 @@
 				3F24E435205D1B580019A0BE /* PrefsMicrophone.m in Sources */,
 				3F24E43F205D20790019A0BE /* UserAccount.m in Sources */,
 				3F24E49B205F7D690019A0BE /* CFContactsComponent.m in Sources */,
+				3F24E4A2205F825D0019A0BE /* CFHttpLogInClick.m in Sources */,
 				3F24E3D2205CEDEC0019A0BE /* main.m in Sources */,
 				3F24E470205D2AA70019A0BE /* CFFMDBSQLToModel.m in Sources */,
 				3F24E451205D26B80019A0BE /* CFFMDBComponent.m in Sources */,

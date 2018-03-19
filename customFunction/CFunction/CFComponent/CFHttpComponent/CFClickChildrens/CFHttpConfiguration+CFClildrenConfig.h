@@ -15,6 +15,8 @@
 + (BOOL)isRightResultByResult:(id)resultObject;
 + (NSInteger)resultErrorCodeByResult:(id)resultObject;
 + (NSString *)resultErrorMsgByResult:(id)resultObject;
+
+
 #pragma mark API列表 (自己添加)
 - (NSString *)login;
 @end
