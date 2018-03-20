@@ -22,6 +22,7 @@
 }
 #pragma mark controller-init
 - (void)setColtro{
+    @WeakObj(self)
     self.title = @"";
 }
 - (void)bankViewInit{
