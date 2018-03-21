@@ -13,6 +13,7 @@
 }
 // 可重复点击的时间间隔
 @property (nonatomic, assign) NSTimeInterval scc_custom_acceptEventInterval;
-@property (nonatomic,copy)void(^didBlock)(UIButton *button) ;
+@property (nonatomic,copy)void(^didBlock)(UIButton *button);
 - (void)setDidBlock:(void (^)(UIButton *button))didBlock;
+- (void)bankViewInit;
 @end

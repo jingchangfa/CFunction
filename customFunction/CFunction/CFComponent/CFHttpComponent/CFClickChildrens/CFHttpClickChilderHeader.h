@@ -10,4 +10,10 @@
 #define CFHttpClickChilderHeader_h
 
 
+#import "CFHttpLogInClick.h"
+#import "CFHttpArticleClick.h"
+
+
+
+
 #endif /* CFHttpClickChilderHeader_h */

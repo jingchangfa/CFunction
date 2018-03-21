@@ -11,7 +11,7 @@
 @implementation CFHttpConfiguration (CFClildrenConfig)
 #pragma mark 配置
 + (NSString *)ConfigHost{
-    return @"http://10.99.1.104:3000";
+    return @"http://10.99.1.120:3000";
 }
 - (NSDictionary *)publicWordBreaks{
     NSDictionary *dic = nil;
@@ -31,6 +31,10 @@
 #pragma mark API配置
 - (NSString *)login{
     NSString *str = @"api/auth/login";
+    return [self complateURLWithAPIString:str];
+}
+- (NSString *)registeres{
+    NSString *str = @"api/auth/registeres";
     return [self complateURLWithAPIString:str];
 }
 @end

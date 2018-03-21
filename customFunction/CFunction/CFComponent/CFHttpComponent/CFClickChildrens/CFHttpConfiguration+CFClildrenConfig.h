@@ -19,4 +19,5 @@
 
 #pragma mark API列表 (自己添加)
 - (NSString *)login;
+- (NSString *)registeres;
 @end

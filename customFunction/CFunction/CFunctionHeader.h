@@ -22,6 +22,14 @@
 // view
 #import "CFViewBase.h"
 #import "CFButtonBase.h"
+#import "CFTableViewCellBase.h"
+#import "CFCollectionViewCellBase.h"
+#import "CFTableViewHeaderFooterViewBase.h"
+#import "CFImageViewBase.h"
+#import "CFLabelBase.h"
+#import "CFScrollViewBase.h"
+#import "CFTextViewBase.h"
+#import "CFTextFieldBase.h"
 
 // 宏
 #import "CFDefindHeader.h"

@@ -28,4 +28,23 @@
     } withFailure:failure];
     [self.apiEngine httpPostRequest:urlString parameters:parameters bodyWithBlock:nil finished:finishedBlock];
 }
+
+- (void)registeresWithMobileString:(NSString *)numberString
+                       AndPassWord:(NSString *)passwordString
+                       withSuccess:(void(^)(NSNumber *userID,NSString *token,NSDictionary *herd))success
+                        andFailure:(defaultFailureBlock)failure{
+    NSString * urlString = [[self.apiConfiguration registeres] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    NSDictionary *parameters = @{@"mobile":numberString,
+                                 @"password":passwordString,
+                                 };
+    HTTPAPIFinishedBlock finishedBlock = [self customFinishedBlock:^BOOL(id resultObject) {
+        NSInteger succeed = [resultObject[@"success"] integerValue];
+        if (succeed) {
+            NSDictionary *herdDic = @{@"upload":resultObject[@"upload_addr"]};
+            success(resultObject[@"id"],resultObject[@"token"],herdDic);
+        }
+        return YES;
+    } withFailure:failure];
+    [self.apiEngine httpPostRequest:urlString parameters:parameters bodyWithBlock:nil finished:finishedBlock];
+}
 @end
