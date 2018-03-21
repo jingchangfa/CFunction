@@ -18,6 +18,7 @@
 #import "UIImage+CFCamera.h"
 #import "NSNumber+CFNumber.h"
 #import "UIViewController+CFNavController.h"
+#import "UIViewController+CFRouteComponent.h"
 
 // view
 #import "CFViewBase.h"

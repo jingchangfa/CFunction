@@ -10,6 +10,11 @@
     1. 继承自 CFHttpClickBase
     2. url配置写在配置文件中（CFHttpConfiguration+CFClildrenConfig.m）
     2. 然后按照模版写子类写在CFClickChildrens文件夹中，CFHttpClickChilderHeader引用子类.h文件
+# 页面跳转的路由
+    1. 解除耦合
+    2. 规定模版 (param, model ,block)构成
+    
+
 
 # 数据层持久化层组件(CFFMDBComponent):
     配置以下文件：
