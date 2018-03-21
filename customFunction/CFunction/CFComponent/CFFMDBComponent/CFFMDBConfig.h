@@ -9,10 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface CFFMDBConfig : NSObject
-// 一个用户一个数据库，返回用户的标示符
-+ (NSString *)userDataBaseIdentifier;
 + (NSString *)theCompanyName;// db路径一部分
 + (NSString *)theProjectName;// db路径一部分
 
-
+// 如果一个用户一个数据库，那么你可以重新实现下面的方法，根据用户的ID生成数据库的路径
++ (NSString *)userDataBaseIdentifier;
 @end

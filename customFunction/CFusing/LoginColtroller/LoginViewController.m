@@ -34,7 +34,7 @@
     }];
 }
 - (void)getModel{
-    
+    [self longSaveModel];
 }
 #pragma mark http
 - (void)httpLogin{
@@ -45,6 +45,36 @@
     }];
 }
 #pragma mark methord
+// 数据持久化
+- (void)longSaveModel{
+    // 批量更新（增或改）
+    NSMutableArray *userArray = @[].mutableCopy;
+    for (int i=0; i<10; i++) {
+        UserModel *model = [[UserModel alloc] init];
+        model.ID = @(i);
+        model.name = [NSString stringWithFormat:@"小明 %d 号",i];
+        [userArray addObject:model];
+    }
+    [CFFMDBComponent CFFMDBUpdateModelsByType:MODEL_MANAGER_TYPE_CHANGE WithModels:userArray AndFinishBlock:^(BOOL successful, NSArray *fireModelArray) {
+    }];
+    // 查询
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSArray *userAll = [CFFMDBComponent CFFMDBSearchModelsByModelClass:[UserModel class] AndSearchPropertyDictionary:nil];
+        NSLog(@"%@",userAll);
+        UserModel *oneUser = [CFFMDBComponent CFFMDBSearchModelsByModelClass:[UserModel class] AndSearchPropertyDictionary:@{@"ID":@(5)}].firstObject;
+        NSLog(@"%@",oneUser.name);
+        oneUser.name = @"5号变小红啦";
+        // 单个更新
+        [CFFMDBComponent CFFMDBUpdataModelByType:MODEL_MANAGER_TYPE_CHANGE WithModel:oneUser];
+        // 查询
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            UserModel *oneUser = [CFFMDBComponent CFFMDBSearchModelsByModelClass:[UserModel class] AndSearchPropertyDictionary:@{@"ID":@(5)}].firstObject;
+            NSLog(@"%@",oneUser.name);
+        });
+    });
+    
+}
+
 - (void)pushListController{
     CFRouteComponent *route = [self cf_registerPushByControllerName:@"ListViewController"];
     [route setCFTitle:@"列表"];

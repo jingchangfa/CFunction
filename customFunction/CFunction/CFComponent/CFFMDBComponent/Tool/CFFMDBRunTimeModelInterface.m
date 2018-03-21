@@ -40,12 +40,10 @@
     if ([_modelClass respondsToSelector:@selector(mainKey)]) {//相应类方法
         return [_modelClass mainKey];
     }
-    NSString *mainKey = [[[_modelClass alloc] init] mainKey];
-    if (mainKey.length == 0) mainKey = @"ID";
-//    {
-//        CFException(NSStringFromClass(_modelClass),@"必须至少实现一个获取主键的方法")
-//    }
-    return mainKey;
+    if ([_modelClass instancesRespondToSelector:@selector(mainKey)]) {
+        return [[[_modelClass alloc] init] mainKey];
+    }
+    return @"ID";
 }
 - (NSString *)mainKeyPropertyType{
     return self.modelPropertyNameAndTypeDictionary[self.mainKeyPropertyName];

@@ -71,6 +71,8 @@
 		3F19B77720623E52009C994D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F19B77520623E52009C994D /* DetailViewController.m */; };
 		3F19B77E2062406B009C994D /* ListBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F19B77B2062406B009C994D /* ListBackView.m */; };
 		3F19B77F2062406B009C994D /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F19B77D2062406B009C994D /* ListViewController.m */; };
+		3F19B78A206268C5009C994D /* ModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F19B789206268C5009C994D /* ModelBase.m */; };
+		3F19B78D20626914009C994D /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F19B78C20626914009C994D /* UserModel.m */; };
 		3F24E3C4205CEDEC0019A0BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E3C3205CEDEC0019A0BE /* AppDelegate.m */; };
 		3F24E3C7205CEDEC0019A0BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E3C6205CEDEC0019A0BE /* ViewController.m */; };
 		3F24E3CA205CEDEC0019A0BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F24E3C8205CEDEC0019A0BE /* Main.storyboard */; };
@@ -233,6 +235,11 @@
 		3F19B77B2062406B009C994D /* ListBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListBackView.m; sourceTree = "<group>"; };
 		3F19B77C2062406B009C994D /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		3F19B77D2062406B009C994D /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		3F19B788206268C5009C994D /* ModelBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelBase.h; sourceTree = "<group>"; };
+		3F19B789206268C5009C994D /* ModelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelBase.m; sourceTree = "<group>"; };
+		3F19B78B20626914009C994D /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		3F19B78C20626914009C994D /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		3F19B78E2062695B009C994D /* ModelHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelHeader.h; sourceTree = "<group>"; };
 		3F24E3BF205CEDEC0019A0BE /* customFunction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = customFunction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F24E3C2205CEDEC0019A0BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F24E3C3205CEDEC0019A0BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -592,6 +599,18 @@
 			path = ListController;
 			sourceTree = "<group>";
 		};
+		3F19B787206268A2009C994D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F19B78E2062695B009C994D /* ModelHeader.h */,
+				3F19B788206268C5009C994D /* ModelBase.h */,
+				3F19B789206268C5009C994D /* ModelBase.m */,
+				3F19B78B20626914009C994D /* UserModel.h */,
+				3F19B78C20626914009C994D /* UserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3F24E3B6205CEDEC0019A0BE = {
 			isa = PBXGroup;
 			children = (
@@ -619,9 +638,8 @@
 			children = (
 				3F24E3C2205CEDEC0019A0BE /* AppDelegate.h */,
 				3F24E3C3205CEDEC0019A0BE /* AppDelegate.m */,
-				3F24E49F205F807E0019A0BE /* Controller */,
-				3F24E3F6205CF1290019A0BE /* CFusing */,
 				3F19B6A520623DF9009C994D /* CFunction */,
+				3F24E3F6205CF1290019A0BE /* CFusing */,
 				3F24E3C5205CEDEC0019A0BE /* ViewController.h */,
 				3F24E3C6205CEDEC0019A0BE /* ViewController.m */,
 				3F24E3C8205CEDEC0019A0BE /* Main.storyboard */,
@@ -655,18 +673,12 @@
 			isa = PBXGroup;
 			children = (
 				3F19B77820623E9F009C994D /* PrefixHeader.pch */,
+				3F19B787206268A2009C994D /* Model */,
 				3F19B76A20623E3F009C994D /* LoginColtroller */,
 				3F19B7792062406B009C994D /* ListController */,
 				3F19B77120623E52009C994D /* DetailController */,
 			);
 			path = CFusing;
-			sourceTree = "<group>";
-		};
-		3F24E49F205F807E0019A0BE /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		D786947947788875A1B92218 /* Pods */ = {
@@ -885,6 +897,7 @@
 				3F19B77F2062406B009C994D /* ListViewController.m in Sources */,
 				3F19B73A20623DFA009C994D /* UserAccount.m in Sources */,
 				3F19B75C20623DFA009C994D /* HMFJSONResponseSerializerWithData.m in Sources */,
+				3F19B78A206268C5009C994D /* ModelBase.m in Sources */,
 				3F19B77720623E52009C994D /* DetailViewController.m in Sources */,
 				3F19B75920623DFA009C994D /* CFHttpCache.m in Sources */,
 				3F19B74C20623DFA009C994D /* CFFMDBConfig.m in Sources */,
@@ -901,6 +914,7 @@
 				3F19B75220623DFA009C994D /* CFFMDBSQLToModel.m in Sources */,
 				3F19B73020623DFA009C994D /* NSNumber+CFNumber.m in Sources */,
 				3F19B76320623DFA009C994D /* CFTableViewHeaderFooterViewBase.m in Sources */,
+				3F19B78D20626914009C994D /* UserModel.m in Sources */,
 				3F19B75420623DFA009C994D /* CFHttpArticleClick.m in Sources */,
 				3F19B73420623DFA009C994D /* NSString+CFTypeConversion.m in Sources */,
 				3F19B76120623DFA009C994D /* CFScrollViewBase.m in Sources */,
