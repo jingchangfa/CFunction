@@ -1,20 +1,20 @@
 //
-//  StencilViewController.m
+//  DetailViewController.m
 //  CF_RUBY_CREATE
 //
 //  Created by CF on 2018/3/20.
 //  Copyright © 2018年 jing. All rights reserved.
 //
 
-#import "StencilViewController.h"
-#import "StencilBackView.h"
+#import "DetailViewController.h"
+#import "DetailBackView.h"
 
-@interface StencilViewController ()
-@property(nonatomic,strong) StencilBackView *backView;
+@interface DetailViewController ()
+@property(nonatomic,strong) DetailBackView *backView;
 
 @end
 
-@implementation StencilViewController
+@implementation DetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,7 +22,6 @@
 }
 #pragma mark controller-init
 - (void)setColtro{
-    @WeakObj(self)
     self.title = @"";
 }
 - (void)bankViewInit{
@@ -38,11 +37,9 @@
 
 #pragma mark methord
 
-#pragma mark push
-
 
 #pragma mark get
-CF_LazyLoadingBlock(StencilBackView, backView, {
+CF_LazyLoadingBlock(DetailBackView, backView, {
     backView.frame = self.view.bounds;
 })
 - (void)didReceiveMemoryWarning {
