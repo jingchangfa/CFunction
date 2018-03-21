@@ -12,7 +12,8 @@
     2. 然后按照模版写子类写在CFClickChildrens文件夹中，CFHttpClickChilderHeader引用子类.h文件
 # 页面跳转的路由
     1. 解除耦合
-    2. 规定模版 (param, model ,block)构成
+    2. CFRouteComponent 用于给push的页面传递值
+    3. 
     
 
 
