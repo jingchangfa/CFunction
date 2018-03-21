@@ -23,6 +23,7 @@
 #pragma mark controller-init
 - (void)setColtro{
     self.title = self.cf_titleValue;
+    [self addNavBackButtonByTitle:@"去登录" AndTitleColor:[UIColor blackColor] AndClickBlock:nil];
 }
 - (void)bankViewInit{
     @WeakObj(self)

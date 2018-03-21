@@ -62,7 +62,7 @@
         }
         block(button);
     }];
-    self.navigationItem.backBarButtonItem = buttonItem;
+    self.navigationItem.leftBarButtonItem = buttonItem;
     return buttonItem;
 }
 - (UIBarButtonItem *)addNavBackButtonByTitle:(NSString *)title AndTitleColor:(UIColor *)color AndClickBlock:(void(^)(UIButton *button))block{
@@ -74,7 +74,7 @@
         }
         block(button);
     }];
-    self.navigationItem.backBarButtonItem = buttonItem;
+    self.navigationItem.leftBarButtonItem = buttonItem;
     return buttonItem;
 }
 
