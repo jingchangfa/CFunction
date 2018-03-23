@@ -45,6 +45,7 @@
     }
     return @"ID";
 }
+
 - (NSString *)mainKeyPropertyType{
     return self.modelPropertyNameAndTypeDictionary[self.mainKeyPropertyName];
 }

@@ -19,6 +19,7 @@
 #import "NSNumber+CFNumber.h"
 #import "UIViewController+CFNavController.h"
 #import "UIViewController+CFRouteComponent.h"
+#import "UIView+CFFrame.h"
 
 // view
 #import "CFViewBase.h"
