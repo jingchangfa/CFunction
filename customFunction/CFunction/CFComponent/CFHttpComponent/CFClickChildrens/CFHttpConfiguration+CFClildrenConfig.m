@@ -11,11 +11,12 @@
 @implementation CFHttpConfiguration (CFClildrenConfig)
 #pragma mark 配置
 + (NSString *)ConfigHost{
-    return @"http://10.99.1.120:3000";
+    return @"http://10.99.1.102:3000";
 }
 - (NSDictionary *)publicWordBreaks{
-    NSDictionary *dic = nil;
-    NSAssert(!dic, @"必须配置此字段，如果含有存储到本地的验证消息的话");
+    UserAccount *current = [UserAccount loadActiveUserAccount];
+    NSDictionary *dic = @{@"token":current.userToken};
+//    NSAssert(!dic, @"必须配置此字段，如果含有存储到本地的验证消息的话");
     return dic;
 }
 + (BOOL)isRightResultByResult:(id)resultObject{
@@ -34,8 +35,17 @@
     return [self complateURLWithAPIString:str];
 }
 - (NSString *)registeres{
-    NSString *str = @"api/auth/registeres";
+    NSString *str = @"api/auth/register";
     return [self complateURLWithAPIString:str];
 }
+- (NSString *)list{
+    NSString *str = @"api/article/list";
+    return [self complateURLWithAPIString:str];
+}
+- (NSString *)create{
+    NSString *str = @"api/article/create";
+    return [self complateURLWithAPIString:str];
+}
+
 @end
 

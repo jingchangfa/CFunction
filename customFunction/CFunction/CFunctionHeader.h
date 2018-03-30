@@ -44,5 +44,6 @@
 #import "CFHttpClickBase.h"
 #import "CFHttpClickChilderHeader.h" // 网络请求
 #import "CFContactsComponent.h"// 联系人
+#import "UIViewController+CFHUDComponent.h"// hud
 
 #endif /* CFunctionHeader_h */
