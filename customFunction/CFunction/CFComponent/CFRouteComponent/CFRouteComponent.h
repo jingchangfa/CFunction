@@ -4,7 +4,7 @@
 //
 //  Created by jing on 2018/3/21.
 //  Copyright © 2018年 jing. All rights reserved.
-//
+//  规范controller：所有的controller都是统一的对外接口
 
 #import <Foundation/Foundation.h>
 #import "CFFMDBModelProtocol.h"
