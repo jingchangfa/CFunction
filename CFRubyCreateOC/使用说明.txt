@@ -1,0 +1,10 @@
+1. 打开终端
+2. cd xxx/CFRubyCreateOC
+3. ruby cf_ruby_create_oc.rb
+4. 输入文件名：
+	eg：NewCreate
+
+
+============  结果  ===============
+
+自动创建一个 viewController 和 backView  
