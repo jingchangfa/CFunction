@@ -8,6 +8,13 @@
 
 #ifndef CFunctionHeader_h
 #define CFunctionHeader_h
+// 第三方框架
+#import "UINavigationController+TZPopGesture.h" // 策划返回和scrollerview兼容
+#import "KVOController.h"// kvo的封装
+#import "UITableView+FDTemplateLayoutCell.h" // masonry cell自适应高度
+#import "MASConstraintMaker+Forbearance.h" // 九宫格布局
+#import "UIView+Forbearance.h"
+#import "NSArray+Sudoku.h"
 // 延展
 #import "NSString+CFEncryption.h"
 #import "NSString+CFDetection.h"

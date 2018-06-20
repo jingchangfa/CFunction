@@ -83,6 +83,18 @@
 		3F24E3D2205CEDEC0019A0BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E3D1205CEDEC0019A0BE /* main.m */; };
 		3F24E3DC205CEDEC0019A0BE /* customFunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E3DB205CEDEC0019A0BE /* customFunctionTests.m */; };
 		3F24E3E7205CEDEC0019A0BE /* customFunctionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F24E3E6205CEDEC0019A0BE /* customFunctionUITests.m */; };
+		3F648E6620DA590D00A2EDC3 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E5720DA590D00A2EDC3 /* NSObject+FBKVOController.m */; };
+		3F648E6720DA590D00A2EDC3 /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E5820DA590D00A2EDC3 /* FBKVOController.m */; };
+		3F648E6820DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E5D20DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCell.m */; };
+		3F648E6920DA590D00A2EDC3 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E5F20DA590D00A2EDC3 /* UITableView+FDKeyedHeightCache.m */; };
+		3F648E6A20DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E6020DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		3F648E6B20DA590D00A2EDC3 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E6120DA590D00A2EDC3 /* UITableView+FDIndexPathHeightCache.m */; };
+		3F648E6C20DA590D00A2EDC3 /* UINavigationController+TZPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E6420DA590D00A2EDC3 /* UINavigationController+TZPopGesture.m */; };
+		3F648E7720DA599F00A2EDC3 /* MASConstraintMaker+Forbearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E6F20DA599F00A2EDC3 /* MASConstraintMaker+Forbearance.m */; };
+		3F648E7820DA599F00A2EDC3 /* NSArray+Sudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E7020DA599F00A2EDC3 /* NSArray+Sudoku.m */; };
+		3F648E7920DA599F00A2EDC3 /* MASForbearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E7120DA599F00A2EDC3 /* MASForbearance.m */; };
+		3F648E7A20DA599F00A2EDC3 /* Remark in Resources */ = {isa = PBXBuildFile; fileRef = 3F648E7220DA599F00A2EDC3 /* Remark */; };
+		3F648E7B20DA599F00A2EDC3 /* UIView+Forbearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E7320DA599F00A2EDC3 /* UIView+Forbearance.m */; };
 		E5811838728025AC91294966 /* Pods_customFunction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */; };
 /* End PBXBuildFile section */
 
@@ -262,6 +274,30 @@
 		3F24E3E2205CEDEC0019A0BE /* customFunctionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = customFunctionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F24E3E6205CEDEC0019A0BE /* customFunctionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customFunctionUITests.m; sourceTree = "<group>"; };
 		3F24E3E8205CEDEC0019A0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F648E5520DA590D00A2EDC3 /* KVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOController.h; sourceTree = "<group>"; };
+		3F648E5620DA590D00A2EDC3 /* FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBKVOController.h; sourceTree = "<group>"; };
+		3F648E5720DA590D00A2EDC3 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
+		3F648E5820DA590D00A2EDC3 /* FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBKVOController.m; sourceTree = "<group>"; };
+		3F648E5920DA590D00A2EDC3 /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FBKVOController.h"; sourceTree = "<group>"; };
+		3F648E5B20DA590D00A2EDC3 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		3F648E5C20DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		3F648E5D20DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		3F648E5E20DA590D00A2EDC3 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		3F648E5F20DA590D00A2EDC3 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		3F648E6020DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
+		3F648E6120DA590D00A2EDC3 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		3F648E6220DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		3F648E6420DA590D00A2EDC3 /* UINavigationController+TZPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+TZPopGesture.m"; sourceTree = "<group>"; };
+		3F648E6520DA590D00A2EDC3 /* UINavigationController+TZPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TZPopGesture.h"; sourceTree = "<group>"; };
+		3F648E6E20DA599F00A2EDC3 /* UIView+Forbearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Forbearance.h"; sourceTree = "<group>"; };
+		3F648E6F20DA599F00A2EDC3 /* MASConstraintMaker+Forbearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASConstraintMaker+Forbearance.m"; sourceTree = "<group>"; };
+		3F648E7020DA599F00A2EDC3 /* NSArray+Sudoku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sudoku.m"; sourceTree = "<group>"; };
+		3F648E7120DA599F00A2EDC3 /* MASForbearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASForbearance.m; sourceTree = "<group>"; };
+		3F648E7220DA599F00A2EDC3 /* Remark */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Remark; sourceTree = "<group>"; };
+		3F648E7320DA599F00A2EDC3 /* UIView+Forbearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Forbearance.m"; sourceTree = "<group>"; };
+		3F648E7420DA599F00A2EDC3 /* MASConstraintMaker+Forbearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraintMaker+Forbearance.h"; sourceTree = "<group>"; };
+		3F648E7520DA599F00A2EDC3 /* NSArray+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sudoku.h"; sourceTree = "<group>"; };
+		3F648E7620DA599F00A2EDC3 /* MASForbearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASForbearance.h; sourceTree = "<group>"; };
 		6E045DAC9AC4363473FC5048 /* Pods-customFunction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.release.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.release.xcconfig"; sourceTree = "<group>"; };
 		8627F33615F4724A8E21F622 /* Pods-customFunction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.debug.xcconfig"; sourceTree = "<group>"; };
 		F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_customFunction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -349,6 +385,7 @@
 		3F19B8A4206DE603009C994D /* CFunction */ = {
 			isa = PBXGroup;
 			children = (
+				3F648E5320DA590D00A2EDC3 /* CF_ThirdLibrary */,
 				3F19B8A5206DE603009C994D /* CFCategory */,
 				3F19B8BA206DE603009C994D /* CFComponent */,
 				3F19B930206DE603009C994D /* CFDefind */,
@@ -699,6 +736,69 @@
 			path = CFusing;
 			sourceTree = "<group>";
 		};
+		3F648E5320DA590D00A2EDC3 /* CF_ThirdLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				3F648E6D20DA599F00A2EDC3 /* Masonry */,
+				3F648E5420DA590D00A2EDC3 /* FBKVOController */,
+				3F648E5A20DA590D00A2EDC3 /* UITableView-FDTemplateLayoutCell */,
+				3F648E6320DA590D00A2EDC3 /* TZScrollViewPopGesture */,
+			);
+			path = CF_ThirdLibrary;
+			sourceTree = "<group>";
+		};
+		3F648E5420DA590D00A2EDC3 /* FBKVOController */ = {
+			isa = PBXGroup;
+			children = (
+				3F648E5520DA590D00A2EDC3 /* KVOController.h */,
+				3F648E5620DA590D00A2EDC3 /* FBKVOController.h */,
+				3F648E5720DA590D00A2EDC3 /* NSObject+FBKVOController.m */,
+				3F648E5820DA590D00A2EDC3 /* FBKVOController.m */,
+				3F648E5920DA590D00A2EDC3 /* NSObject+FBKVOController.h */,
+			);
+			path = FBKVOController;
+			sourceTree = "<group>";
+		};
+		3F648E5A20DA590D00A2EDC3 /* UITableView-FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				3F648E5B20DA590D00A2EDC3 /* UITableView+FDKeyedHeightCache.h */,
+				3F648E5C20DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCellDebug.h */,
+				3F648E5D20DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCell.m */,
+				3F648E5E20DA590D00A2EDC3 /* UITableView+FDIndexPathHeightCache.h */,
+				3F648E5F20DA590D00A2EDC3 /* UITableView+FDKeyedHeightCache.m */,
+				3F648E6020DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCellDebug.m */,
+				3F648E6120DA590D00A2EDC3 /* UITableView+FDIndexPathHeightCache.m */,
+				3F648E6220DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCell.h */,
+			);
+			path = "UITableView-FDTemplateLayoutCell";
+			sourceTree = "<group>";
+		};
+		3F648E6320DA590D00A2EDC3 /* TZScrollViewPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				3F648E6420DA590D00A2EDC3 /* UINavigationController+TZPopGesture.m */,
+				3F648E6520DA590D00A2EDC3 /* UINavigationController+TZPopGesture.h */,
+			);
+			path = TZScrollViewPopGesture;
+			sourceTree = "<group>";
+		};
+		3F648E6D20DA599F00A2EDC3 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				3F648E6E20DA599F00A2EDC3 /* UIView+Forbearance.h */,
+				3F648E6F20DA599F00A2EDC3 /* MASConstraintMaker+Forbearance.m */,
+				3F648E7020DA599F00A2EDC3 /* NSArray+Sudoku.m */,
+				3F648E7120DA599F00A2EDC3 /* MASForbearance.m */,
+				3F648E7220DA599F00A2EDC3 /* Remark */,
+				3F648E7320DA599F00A2EDC3 /* UIView+Forbearance.m */,
+				3F648E7420DA599F00A2EDC3 /* MASConstraintMaker+Forbearance.h */,
+				3F648E7520DA599F00A2EDC3 /* NSArray+Sudoku.h */,
+				3F648E7620DA599F00A2EDC3 /* MASForbearance.h */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
 		D786947947788875A1B92218 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -818,6 +918,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F648E7A20DA599F00A2EDC3 /* Remark in Resources */,
 				3F24E3CF205CEDEC0019A0BE /* LaunchScreen.storyboard in Resources */,
 				3F19B96F206DE603009C994D /* document.txt in Resources */,
 				3F24E3CC205CEDEC0019A0BE /* Assets.xcassets in Resources */,
@@ -914,6 +1015,7 @@
 				3F19B77E2062406B009C994D /* ListBackView.m in Sources */,
 				3F19B937206DE603009C994D /* NSString+CFJSONConversion.m in Sources */,
 				3F19B944206DE603009C994D /* PrefsAddressBook.m in Sources */,
+				3F648E7920DA599F00A2EDC3 /* MASForbearance.m in Sources */,
 				3F19B93B206DE603009C994D /* UIView+CFFrame.m in Sources */,
 				3F19B77F2062406B009C994D /* ListViewController.m in Sources */,
 				3F19B78A206268C5009C994D /* ModelBase.m in Sources */,
@@ -925,10 +1027,12 @@
 				3F19B95E206DE603009C994D /* CFHttpCache.m in Sources */,
 				3F19B941206DE603009C994D /* CFAuthorPermissions.m in Sources */,
 				3F19B95A206DE603009C994D /* CFHttpClickBase+CFClickBaseErrorConfig.m in Sources */,
+				3F648E6C20DA590D00A2EDC3 /* UINavigationController+TZPopGesture.m in Sources */,
 				3F19B95C206DE603009C994D /* CFHttpLogInClick.m in Sources */,
 				3F19B96A206DE603009C994D /* CFTextFieldBase.m in Sources */,
 				3F19B947206DE603009C994D /* PrefsMicrophone.m in Sources */,
 				3F24E3C7205CEDEC0019A0BE /* ViewController.m in Sources */,
+				3F648E6B20DA590D00A2EDC3 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				3F19B949206DE603009C994D /* CFContactsComponent.m in Sources */,
 				3F19B94C206DE603009C994D /* YContactObjectManager.m in Sources */,
 				3F19B954206DE603009C994D /* CFFMDBModelToSQL.m in Sources */,
@@ -938,18 +1042,23 @@
 				3F19B94B206DE603009C994D /* YContactObject.m in Sources */,
 				3F19B946206DE603009C994D /* PrefsLocation.m in Sources */,
 				3F19B945206DE603009C994D /* PrefsCamera.m in Sources */,
+				3F648E7B20DA599F00A2EDC3 /* UIView+Forbearance.m in Sources */,
+				3F648E7720DA599F00A2EDC3 /* MASConstraintMaker+Forbearance.m in Sources */,
 				3F19B93A206DE603009C994D /* UIImage+CFCamera.m in Sources */,
 				3F19B959206DE603009C994D /* CFHttpArticleClick.m in Sources */,
 				3F19B934206DE603009C994D /* NSNumber+CFNumber.m in Sources */,
 				3F19B936206DE603009C994D /* NSString+CFEncryption.m in Sources */,
 				3F19B948206DE603009C994D /* PrefsPhoto.m in Sources */,
 				3F19B94A206DE603009C994D /* CFModelContacts.m in Sources */,
+				3F648E6820DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				3F19B76F20623E3F009C994D /* LoginBackView.m in Sources */,
 				3F19B96D206DE603009C994D /* CFRouteComponent.m in Sources */,
+				3F648E7820DA599F00A2EDC3 /* NSArray+Sudoku.m in Sources */,
 				3F19B942206DE603009C994D /* CFPermissionConfig.m in Sources */,
 				3F19B94E206DE603009C994D /* CFNavButtonBuilder.m in Sources */,
 				3F19B962206DE603009C994D /* UIViewController+CFHUDComponent.m in Sources */,
 				3F19B966206DE603009C994D /* CFLabelBase.m in Sources */,
+				3F648E6720DA590D00A2EDC3 /* FBKVOController.m in Sources */,
 				3F19B967206DE603009C994D /* CFScrollViewBase.m in Sources */,
 				3F19B963206DE603009C994D /* CFButtonBase.m in Sources */,
 				3F19B939206DE603009C994D /* UIColor+CFColor.m in Sources */,
@@ -961,6 +1070,7 @@
 				3F19B960206DE603009C994D /* CFHttpEngine.m in Sources */,
 				3F19B93C206DE603009C994D /* UIView+CFScreenShots.m in Sources */,
 				3F19B952206DE603009C994D /* CFFMDBConfiguration.m in Sources */,
+				3F648E6620DA590D00A2EDC3 /* NSObject+FBKVOController.m in Sources */,
 				3F19B77020623E3F009C994D /* LoginViewController.m in Sources */,
 				3F19B958206DE603009C994D /* CFFMDBTypeChange.m in Sources */,
 				3F19B95D206DE603009C994D /* CFHttpClickBase.m in Sources */,
@@ -969,10 +1079,12 @@
 				3F19B93E206DE603009C994D /* UserAccountStore.m in Sources */,
 				3F24E3D2205CEDEC0019A0BE /* main.m in Sources */,
 				3F19B968206DE603009C994D /* CFTableViewCellBase.m in Sources */,
+				3F648E6A20DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				3F19B96E206DE603009C994D /* UIViewController+CFRouteComponent.m in Sources */,
 				3F19B96C206DE603009C994D /* CFViewBase.m in Sources */,
 				3F19B77620623E52009C994D /* DetailBackView.m in Sources */,
 				3F19B95F206DE603009C994D /* CFHttpConfiguration.m in Sources */,
+				3F648E6920DA590D00A2EDC3 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				3F19B93F206DE603009C994D /* UserAccount.m in Sources */,
 				3F19B964206DE603009C994D /* CFCollectionViewCellBase.m in Sources */,
 				3F19B965206DE603009C994D /* CFImageViewBase.m in Sources */,
