@@ -43,7 +43,9 @@
 
 #pragma mark get
 CF_LazyLoadingBlock(StencilBackView, backView, {
-    backView.frame = self.view.bounds;
+    CGRect frame = self.view.bounds;
+    frame.size.height -= (CF_NAV_HEIGHT+CF_NAV_VIEW_OFFSET);
+    backView.frame = frame;
 })
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
