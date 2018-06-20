@@ -1,6 +1,5 @@
 /** 各文件的使用API文档 */
 CFRouteComponent: 微量级路由跳转，目的统一controller之间的API,规范controller都是统一的对外接口
-
 ```
 /**
 上级页面：
@@ -36,10 +35,24 @@ self.cf_paramValue;
 self.cf_blockValue;
 }
 ```
-
-
-
-
+CFKitComponent: View的基类
+CFHudComponent: alert弹出帮助类
+CFHttpComponent: 网络类
+CFFMDBComponent: 数据持久化帮助类
+CFControllerComponent: 控制器帮助类
+```
+CFNavButtonBuilder : UIBarButtonItem 构建器
+```
+CFContactsComponent: 通讯录管理类
+```
+// finishblcok 要记得调用，调用finishblcok会持久化通讯录
++(void)CFRequestContactsComplete:(void (^)(NSArray<CFModelContacts *> * contacts,void(^finishblcok)(void)))completeBlock AndFireAlertShow:(void(^)(void))alertShowBlock;
+```
+CFAuthorPermissionComponent: 权限检测
+```
+CFPermissionConfig：中重写alertShowWithTitle方法完成对用户的提示
+```
+CFAuthorComponent：用户持久化管理类(登陆成功等，UserAccountInfoAdditional附加信息的存储，根据业务自己改)
 
 
 

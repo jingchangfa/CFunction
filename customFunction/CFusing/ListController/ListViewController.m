@@ -31,9 +31,6 @@
 }
 - (void)getModel{
     @WeakObj(self)
-    self.cf_IDValue;
-    self.cf_paramValue;
-    self.cf_blockValue;
 }
 #pragma mark http
 

@@ -16,20 +16,10 @@
 @implementation CFNavCustomButton
 
 - (instancetype)initWithTitle:(NSString *)title AndDidBlock:(void(^)(UIButton *customButton))didBlock{
-    CGRect frame = CGRectMake(0, 0, 40, 30);
     CGFloat fontSize = 30*0.5;
-    if (title.length>2) {
-        frame = CGRectMake(0, 0, 50, 30);
-        fontSize = 30*0.48;
-    }
-    if (title.length>3) {
-        frame = CGRectMake(0, 0, 60, 30);
-        fontSize = 30*0.46;
-    }
-    if (title.length>6) {
-        frame = CGRectMake(0, 0, 100, 30);
-        fontSize = 30*0.45;
-    }
+    CGSize maxSize = CGSizeMake(100, 30);
+    CGRect frame = CGRectMake(0, 0, 0, 0);
+    frame.size = [title toStringSizeAndFountSize:fontSize AndFountWidth:-1 AndMaxSize:maxSize];
     self = [super initWithFrame:frame];
     if (self) {
         self.didBlock = didBlock;
