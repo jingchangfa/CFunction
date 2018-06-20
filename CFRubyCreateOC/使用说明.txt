@@ -7,4 +7,15 @@
 
 ============  结果  ===============
 
-自动创建一个 viewController 和 backView  
+自动创建一个 NewCreateController 文件夹
+里面包含：
+NewCreateBackView.h
+NewCreateBackView.m
+NewCreateViewController.h
+NewCreateViewController.m
+/** 文件规范了代码格式 */
+1. 视图层：你只需在 bankViewInit 方法内，初始化视图，无需重写initWithFrame方法
+2. 控制层：
+	setContro方法里，书写控制器相关的内容
+	bankViewInit方法里，书写视图与控制器相关的绑定
+	getModel方法里，书写数据获取以及赋值相关的内容
