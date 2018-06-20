@@ -7,4 +7,6 @@ target 'customFunction' do
     pod 'MJExtension'
     pod 'SDWebImage'
     pod 'FMDB'
+    pod 'MBProgressHUD'
+    pod 'EBBannerView'
 end

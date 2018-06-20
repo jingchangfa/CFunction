@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "50AB663C0B2672C0B81A50771C141AC9"
+               BlueprintIdentifier = "00B02C81CF97B784A15C8F494FFC8E5A"
                BuildableName = "Pods_customFunction.framework"
                BlueprintName = "Pods-customFunction"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "50AB663C0B2672C0B81A50771C141AC9"
+            BlueprintIdentifier = "00B02C81CF97B784A15C8F494FFC8E5A"
             BuildableName = "Pods_customFunction.framework"
             BlueprintName = "Pods-customFunction"
             ReferencedContainer = "container:Pods.xcodeproj">
