@@ -8,8 +8,8 @@
 
 #import "CFNotificationComponent.h"
 @interface CFNotificationComponent()
-@property(nonatomic,strong) NSString *name;
-@property(nonatomic,copy) void(^block)(id model);
+@property(nonatomic,strong) NSMutableDictionary *callbackDic;
+
 @end
 @implementation CFNotificationComponent
 #pragma mark 公开
@@ -17,16 +17,17 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:name object:value];
 }
 
-- (instancetype)initWithNotiName:(NSString *)name{
+// 接收通知
+- (void)addCallbackWithBlcok:(void(^)(id model))block AndName:(NSString *)name{
+    self.callbackDic[name] = block;
+    [self addNotification:name];
+}
+- (instancetype)init{
     self = [super init];
     if (self) {
-        self.name = name;
-        [self addNotification];
+        self.callbackDic = @{}.mutableCopy;
     }
     return self;
-}
-- (void)callbackWithBlcok:(void(^)(id model))block{
-    self.block = block;
 }
 
 #pragma mark 私有
@@ -35,17 +36,18 @@
 }
 
 - (void)notificationAction:(NSNotification *)notification{
-    if (self.block) {
+    void(^block)(id model) = self.callbackDic[notification.name];
+    if (block) {
         id model = [notification object];
-        self.block(model);
+        block(model);
     }
 }
 
 #pragma mark noti
-- (void)addNotification{
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationAction:) name:self.name object:nil];
+- (void)addNotification:(NSString *)name{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationAction:) name:name object:nil];
 }
 - (void)removeNotification{
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:self.name object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 @end

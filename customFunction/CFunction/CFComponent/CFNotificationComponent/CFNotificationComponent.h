@@ -9,12 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface CFNotificationComponent<__covariant ObjectType> : NSObject
-- (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
-
 // 发送通知
-+ (void)sendNotificationWithNotiName:(NSString *)name AndValue:(ObjectType)value;
++ (void)sendNotificationWithNotiName:(NSString *)name AndValue:(id)value;
 // 接收通知
-- (instancetype)initWithNotiName:(NSString *)name;
-- (void)callbackWithBlcok:(void(^)(ObjectType model))block;
+- (void)addCallbackWithBlcok:(void(^)(id model))block AndName:(NSString *)name;
 @end
