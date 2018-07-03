@@ -54,7 +54,7 @@ CFPermissionConfig：中重写alertShowWithTitle方法完成对用户的提示
 ```
 CFAuthorComponent：用户持久化管理类(登陆成功等，UserAccountInfoAdditional附加信息的存储，根据业务自己改)
 
-
+CFNotificationComponent： 通知的封装
 
 
 

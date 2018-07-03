@@ -95,6 +95,7 @@
 		3F648E7920DA599F00A2EDC3 /* MASForbearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E7120DA599F00A2EDC3 /* MASForbearance.m */; };
 		3F648E7A20DA599F00A2EDC3 /* Remark in Resources */ = {isa = PBXBuildFile; fileRef = 3F648E7220DA599F00A2EDC3 /* Remark */; };
 		3F648E7B20DA599F00A2EDC3 /* UIView+Forbearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E7320DA599F00A2EDC3 /* UIView+Forbearance.m */; };
+		3F7DCF9820EB40480026602E /* CFNotificationComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DCF9720EB40480026602E /* CFNotificationComponent.m */; };
 		E5811838728025AC91294966 /* Pods_customFunction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */; };
 /* End PBXBuildFile section */
 
@@ -298,6 +299,8 @@
 		3F648E7420DA599F00A2EDC3 /* MASConstraintMaker+Forbearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraintMaker+Forbearance.h"; sourceTree = "<group>"; };
 		3F648E7520DA599F00A2EDC3 /* NSArray+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sudoku.h"; sourceTree = "<group>"; };
 		3F648E7620DA599F00A2EDC3 /* MASForbearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASForbearance.h; sourceTree = "<group>"; };
+		3F7DCF9620EB40480026602E /* CFNotificationComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFNotificationComponent.h; sourceTree = "<group>"; };
+		3F7DCF9720EB40480026602E /* CFNotificationComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFNotificationComponent.m; sourceTree = "<group>"; };
 		6E045DAC9AC4363473FC5048 /* Pods-customFunction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.release.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.release.xcconfig"; sourceTree = "<group>"; };
 		8627F33615F4724A8E21F622 /* Pods-customFunction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.debug.xcconfig"; sourceTree = "<group>"; };
 		F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_customFunction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -425,6 +428,7 @@
 		3F19B8BA206DE603009C994D /* CFComponent */ = {
 			isa = PBXGroup;
 			children = (
+				3F7DCF9520EB40250026602E /* CFNotificationComponent */,
 				3F19B8BB206DE603009C994D /* CFAuthorComponent */,
 				3F19B8C3206DE603009C994D /* CFAuthorPermissionComponent */,
 				3F19B8D5206DE603009C994D /* CFContactsComponent */,
@@ -799,6 +803,15 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		3F7DCF9520EB40250026602E /* CFNotificationComponent */ = {
+			isa = PBXGroup;
+			children = (
+				3F7DCF9620EB40480026602E /* CFNotificationComponent.h */,
+				3F7DCF9720EB40480026602E /* CFNotificationComponent.m */,
+			);
+			path = CFNotificationComponent;
+			sourceTree = "<group>";
+		};
 		D786947947788875A1B92218 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1060,6 +1073,7 @@
 				3F648E7820DA599F00A2EDC3 /* NSArray+Sudoku.m in Sources */,
 				3F19B942206DE603009C994D /* CFPermissionConfig.m in Sources */,
 				3F19B94E206DE603009C994D /* CFNavButtonBuilder.m in Sources */,
+				3F7DCF9820EB40480026602E /* CFNotificationComponent.m in Sources */,
 				3F19B962206DE603009C994D /* UIViewController+CFHUDComponent.m in Sources */,
 				3F19B966206DE603009C994D /* CFLabelBase.m in Sources */,
 				3F648E6720DA590D00A2EDC3 /* FBKVOController.m in Sources */,
