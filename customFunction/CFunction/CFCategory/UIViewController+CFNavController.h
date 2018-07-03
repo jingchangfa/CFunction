@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "CFNotificationComponent.h"// 通知封装
 
 @interface UIViewController (CFNavController)
 // 颜色
@@ -20,6 +21,8 @@
 - (void)setNavTitle:(NSString *)title;
 // AppDelegate
 - (AppDelegate *)appDelegate;
+// 通知调用对象
+@property (nonatomic, strong)CFNotificationComponent *notificationComponent;
 // 导航条按钮
 - (void)onBackButtonClicked;// 返回按钮的点击事件
 
@@ -36,5 +39,6 @@
 - (void)setColtro;// 设置控制器导航栏
 - (void)getModel;// 网络请求以及MV绑定
 - (void)bankViewInit;// V设置初始化
+- (void)notificationCallbackSetting;// 通知回调设置
 - (void)relayoutSubViewContent;// V 布局
 @end

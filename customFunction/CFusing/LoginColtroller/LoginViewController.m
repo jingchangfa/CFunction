@@ -35,11 +35,31 @@
 }
 - (void)getModel{
     [self longSaveModel];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        // 发送通知
+        [CFNotificationComponent sendNotificationWithNotiName:@"remove" AndValue:@"removeremoveremove"];
+        [CFNotificationComponent sendNotificationWithNotiName:@"remove2" AndValue:@"remove2remove2remove2"];
+    });
+}
+- (void)notificationCallbackSetting{
+    // 注册接收通知
+    [self.notificationComponent addCallbackWithBlcok:^(id model) {
+        NSLog(@"通知%@",model);
+    } AndName:@"remove"];
+    
+    [self.notificationComponent addCallbackWithBlcok:^(id model) {
+        NSLog(@"通知%@",model);
+    } AndName:@"remove2"];
+    // kvo 使用
+    self.KVOController = [FBKVOController controllerWithObserver:self];
+    [self.KVOController observe:self.backView.numberTextfiled keyPath:@"text" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSKeyValueChangeKey,id> * _Nonnull change) {
+        NSLog(@"numberTextfiled text 变化了 = %@",change);
+    }];
+    
 }
 #pragma mark http
 - (void)httpLogin{
     [[CFHttpLogInClick client] loginWithMobileString:@"123123123" AndPassWord:@"1111111" withSuccess:^(NSNumber *userID, NSString *token, NSDictionary *herd) {
-        
     } andFailure:^(NSInteger errorCode, NSString *errorMsg) {
         
     }];

@@ -40,6 +40,23 @@
 - (AppDelegate *)appDelegate{
     return (AppDelegate *)[UIApplication sharedApplication].delegate;
 }
+// 通知懒加载初始化
+static void *NotificationComponentKey = &NotificationComponentKey;
+- (CFNotificationComponent *)notificationComponent
+{
+    id component = objc_getAssociatedObject(self, NotificationComponentKey);
+    // lazily create the KVOController
+    if (nil == component) {
+        component = [[CFNotificationComponent alloc] init];
+        self.notificationComponent = component;
+    }
+    
+    return component;
+}
+- (void)setNotificationComponent:(CFNotificationComponent *)notificationComponent
+{
+    objc_setAssociatedObject(self, NotificationComponentKey, notificationComponent, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
 
 // 导航条按钮
 - (void)onBackButtonClicked{
@@ -176,6 +193,7 @@
 #pragma mark 替换didload
 - (void)CFViewDidLoad{
     [self CFViewDidLoad];
+    // 设置controler
     SEL selectorColtro =  NSSelectorFromString(@"setColtro");
     if ([self respondsToSelector:selectorColtro]) {
         [self setBackgroundColor:[UIColor whiteColor]];
@@ -183,19 +201,26 @@
         void (*function)(id, SEL) = (__typeof__(function))imp;
         function(self, selectorColtro);
     }
-    
+    // 视图创建
     SEL selectorView =  NSSelectorFromString(@"bankViewInit");
     if ([self respondsToSelector:selectorView]) {
         IMP imp = [self methodForSelector:selectorView];
         void (*function)(id, SEL) = (__typeof__(function))imp;
         function(self, selectorView);
     }
-    
+    // 数据获取
     SEL selectorModel =  NSSelectorFromString(@"getModel");
     if ([self respondsToSelector:selectorModel]) {
         IMP imp = [self methodForSelector:selectorModel];
         void (*function)(id, SEL) = (__typeof__(function))imp;
         function(self, selectorModel);
+    }
+    // 通知回调设置
+    SEL selectorNotification =  NSSelectorFromString(@"notificationCallbackSetting");
+    if ([self respondsToSelector:selectorNotification]) {
+        IMP imp = [self methodForSelector:selectorNotification];
+        void (*function)(id, SEL) = (__typeof__(function))imp;
+        function(self, selectorNotification);
     }
 }
 + (void)replaceViewDidLoadMethod{
@@ -213,17 +238,19 @@
     }
 }
 //// 规范格式
+// 设置控制器导航栏
 //- (void)setColtro{
-//
-//}// 设置控制器导航栏
+//}
+// 网络请求以及MV绑定
 //- (void)getModel{
-//
-//}// 网络请求以及MV绑定
+//}
+// V设置初始化
 //- (void)bankViewInit{
-//
-//}// V设置初始化
+//}
+// 通知回调设置
 //- (void)relayoutSubViewContent{
-//
+//}
+//- (void)relayoutSubViewContent{
 //}// V 布局
 @end
 

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CFNotificationComponent<__covariant ObjectType> : NSObject
+@interface CFNotificationComponent : NSObject
 + (instancetype)new NS_UNAVAILABLE;
 // 发送通知
 + (void)sendNotificationWithNotiName:(NSString *)name AndValue:(id)value;

@@ -756,9 +756,9 @@
 			children = (
 				3F648E5520DA590D00A2EDC3 /* KVOController.h */,
 				3F648E5620DA590D00A2EDC3 /* FBKVOController.h */,
-				3F648E5720DA590D00A2EDC3 /* NSObject+FBKVOController.m */,
 				3F648E5820DA590D00A2EDC3 /* FBKVOController.m */,
 				3F648E5920DA590D00A2EDC3 /* NSObject+FBKVOController.h */,
+				3F648E5720DA590D00A2EDC3 /* NSObject+FBKVOController.m */,
 			);
 			path = FBKVOController;
 			sourceTree = "<group>";
