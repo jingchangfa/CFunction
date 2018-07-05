@@ -50,7 +50,6 @@ static void *NSObjectKVOControllerNonRetainingKey = &NSObjectKVOControllerNonRet
     controller = [[FBKVOController alloc] initWithObserver:self retainObserved:NO];
     self.KVOControllerNonRetaining = controller;
   }
-  
   return controller;
 }
 

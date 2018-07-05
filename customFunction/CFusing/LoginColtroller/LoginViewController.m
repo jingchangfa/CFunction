@@ -42,7 +42,7 @@
     });
 }
 - (void)notificationCallbackSetting{
-    // 注册接收通知
+    // 注册接收通知(不需要自己重写delloc用来remove)
     [self.notificationComponent addCallbackWithBlcok:^(id model) {
         NSLog(@"通知%@",model);
     } AndName:@"remove"];
@@ -50,12 +50,11 @@
     [self.notificationComponent addCallbackWithBlcok:^(id model) {
         NSLog(@"通知%@",model);
     } AndName:@"remove2"];
-    // kvo 使用
+    // kvo 使用(不需要自己重写delloc用来remove)
     self.KVOController = [FBKVOController controllerWithObserver:self];
     [self.KVOController observe:self.backView.numberTextfiled keyPath:@"text" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSKeyValueChangeKey,id> * _Nonnull change) {
         NSLog(@"numberTextfiled text 变化了 = %@",change);
     }];
-    
 }
 #pragma mark http
 - (void)httpLogin{

@@ -52,5 +52,6 @@
 #import "CFHttpClickChilderHeader.h" // 网络请求
 #import "CFContactsComponent.h"// 联系人
 #import "UIViewController+CFHUDComponent.h"// hud
+#import "CFSortArrayComponent.h"// 排序
 
 #endif /* CFunctionHeader_h */

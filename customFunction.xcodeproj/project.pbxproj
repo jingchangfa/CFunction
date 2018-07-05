@@ -96,6 +96,8 @@
 		3F648E7A20DA599F00A2EDC3 /* Remark in Resources */ = {isa = PBXBuildFile; fileRef = 3F648E7220DA599F00A2EDC3 /* Remark */; };
 		3F648E7B20DA599F00A2EDC3 /* UIView+Forbearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E7320DA599F00A2EDC3 /* UIView+Forbearance.m */; };
 		3F7DCF9820EB40480026602E /* CFNotificationComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DCF9720EB40480026602E /* CFNotificationComponent.m */; };
+		3F7DCF9F20EBA6E70026602E /* CFSortArrayComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DCF9E20EBA6E70026602E /* CFSortArrayComponent.m */; };
+		3F7DCFAB20EDC20B0026602E /* NSMutableArray+CFChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DCFAA20EDC20B0026602E /* NSMutableArray+CFChange.m */; };
 		E5811838728025AC91294966 /* Pods_customFunction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */; };
 /* End PBXBuildFile section */
 
@@ -301,6 +303,10 @@
 		3F648E7620DA599F00A2EDC3 /* MASForbearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASForbearance.h; sourceTree = "<group>"; };
 		3F7DCF9620EB40480026602E /* CFNotificationComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFNotificationComponent.h; sourceTree = "<group>"; };
 		3F7DCF9720EB40480026602E /* CFNotificationComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFNotificationComponent.m; sourceTree = "<group>"; };
+		3F7DCF9D20EBA6E70026602E /* CFSortArrayComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFSortArrayComponent.h; sourceTree = "<group>"; };
+		3F7DCF9E20EBA6E70026602E /* CFSortArrayComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFSortArrayComponent.m; sourceTree = "<group>"; };
+		3F7DCFA920EDC20B0026602E /* NSMutableArray+CFChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+CFChange.h"; sourceTree = "<group>"; };
+		3F7DCFAA20EDC20B0026602E /* NSMutableArray+CFChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+CFChange.m"; sourceTree = "<group>"; };
 		6E045DAC9AC4363473FC5048 /* Pods-customFunction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.release.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.release.xcconfig"; sourceTree = "<group>"; };
 		8627F33615F4724A8E21F622 /* Pods-customFunction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customFunction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-customFunction/Pods-customFunction.debug.xcconfig"; sourceTree = "<group>"; };
 		F1E71522C11AB6EA0563023E /* Pods_customFunction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_customFunction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -421,6 +427,8 @@
 				3F19B8B7206DE603009C994D /* UIView+CFScreenShots.m */,
 				3F19B8B8206DE603009C994D /* UIViewController+CFNavController.h */,
 				3F19B8B9206DE603009C994D /* UIViewController+CFNavController.m */,
+				3F7DCFA920EDC20B0026602E /* NSMutableArray+CFChange.h */,
+				3F7DCFAA20EDC20B0026602E /* NSMutableArray+CFChange.m */,
 			);
 			path = CFCategory;
 			sourceTree = "<group>";
@@ -428,6 +436,7 @@
 		3F19B8BA206DE603009C994D /* CFComponent */ = {
 			isa = PBXGroup;
 			children = (
+				3F7DCF9C20EBA6C80026602E /* CFSortArrayComponent */,
 				3F7DCF9520EB40250026602E /* CFNotificationComponent */,
 				3F19B8BB206DE603009C994D /* CFAuthorComponent */,
 				3F19B8C3206DE603009C994D /* CFAuthorPermissionComponent */,
@@ -812,6 +821,15 @@
 			path = CFNotificationComponent;
 			sourceTree = "<group>";
 		};
+		3F7DCF9C20EBA6C80026602E /* CFSortArrayComponent */ = {
+			isa = PBXGroup;
+			children = (
+				3F7DCF9D20EBA6E70026602E /* CFSortArrayComponent.h */,
+				3F7DCF9E20EBA6E70026602E /* CFSortArrayComponent.m */,
+			);
+			path = CFSortArrayComponent;
+			sourceTree = "<group>";
+		};
 		D786947947788875A1B92218 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1100,6 +1118,7 @@
 				3F648E6A20DA590D00A2EDC3 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				3F19B96E206DE603009C994D /* UIViewController+CFRouteComponent.m in Sources */,
 				3F19B96C206DE603009C994D /* CFViewBase.m in Sources */,
+				3F7DCF9F20EBA6E70026602E /* CFSortArrayComponent.m in Sources */,
 				3F19B77620623E52009C994D /* DetailBackView.m in Sources */,
 				3F19B95F206DE603009C994D /* CFHttpConfiguration.m in Sources */,
 				3F648E6920DA590D00A2EDC3 /* UITableView+FDKeyedHeightCache.m in Sources */,
@@ -1107,6 +1126,7 @@
 				3F19B964206DE603009C994D /* CFCollectionViewCellBase.m in Sources */,
 				3F19B965206DE603009C994D /* CFImageViewBase.m in Sources */,
 				3F19B951206DE603009C994D /* CFFMDBConfig.m in Sources */,
+				3F7DCFAB20EDC20B0026602E /* NSMutableArray+CFChange.m in Sources */,
 				3F24E3C4205CEDEC0019A0BE /* AppDelegate.m in Sources */,
 				3F19B940206DE603009C994D /* UserAccountInfoAdditional.m in Sources */,
 				3F19B969206DE603009C994D /* CFTableViewHeaderFooterViewBase.m in Sources */,
