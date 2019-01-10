@@ -95,6 +95,16 @@
 		3F648E7920DA599F00A2EDC3 /* MASForbearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E7120DA599F00A2EDC3 /* MASForbearance.m */; };
 		3F648E7A20DA599F00A2EDC3 /* Remark in Resources */ = {isa = PBXBuildFile; fileRef = 3F648E7220DA599F00A2EDC3 /* Remark */; };
 		3F648E7B20DA599F00A2EDC3 /* UIView+Forbearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648E7320DA599F00A2EDC3 /* UIView+Forbearance.m */; };
+		3F77878F21E7620C00347B1E /* UILabel+CF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F77878E21E7620C00347B1E /* UILabel+CF.m */; };
+		3F77879221E7621D00347B1E /* UIButton+CF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F77879121E7621D00347B1E /* UIButton+CF.m */; };
+		3F77879521E7624600347B1E /* UICollectionViewCell+CF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F77879421E7624600347B1E /* UICollectionViewCell+CF.m */; };
+		3F77879821E7625300347B1E /* UIImageView+CF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F77879721E7625300347B1E /* UIImageView+CF.m */; };
+		3F77879B21E7627D00347B1E /* UIScrollView+CF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F77879A21E7627D00347B1E /* UIScrollView+CF.m */; };
+		3F77879E21E7629400347B1E /* UITableViewCell+CF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F77879D21E7629400347B1E /* UITableViewCell+CF.m */; };
+		3F7787A121E762A900347B1E /* UITableViewHeaderFooterView+CF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7787A021E762A900347B1E /* UITableViewHeaderFooterView+CF.m */; };
+		3F7787A421E762C800347B1E /* UITextField+CF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7787A321E762C800347B1E /* UITextField+CF.m */; };
+		3F7787A821E762E400347B1E /* UITextView+CF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7787A721E762E400347B1E /* UITextView+CF.m */; };
+		3F7787AB21E762FA00347B1E /* UIView+CF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7787AA21E762FA00347B1E /* UIView+CF.m */; };
 		3F7DCF9820EB40480026602E /* CFNotificationComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DCF9720EB40480026602E /* CFNotificationComponent.m */; };
 		3F7DCF9F20EBA6E70026602E /* CFSortArrayComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DCF9E20EBA6E70026602E /* CFSortArrayComponent.m */; };
 		3F7DCFAB20EDC20B0026602E /* NSMutableArray+CFChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DCFAA20EDC20B0026602E /* NSMutableArray+CFChange.m */; };
@@ -301,6 +311,26 @@
 		3F648E7420DA599F00A2EDC3 /* MASConstraintMaker+Forbearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraintMaker+Forbearance.h"; sourceTree = "<group>"; };
 		3F648E7520DA599F00A2EDC3 /* NSArray+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sudoku.h"; sourceTree = "<group>"; };
 		3F648E7620DA599F00A2EDC3 /* MASForbearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASForbearance.h; sourceTree = "<group>"; };
+		3F77878D21E7620C00347B1E /* UILabel+CF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+CF.h"; sourceTree = "<group>"; };
+		3F77878E21E7620C00347B1E /* UILabel+CF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CF.m"; sourceTree = "<group>"; };
+		3F77879021E7621D00347B1E /* UIButton+CF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CF.h"; sourceTree = "<group>"; };
+		3F77879121E7621D00347B1E /* UIButton+CF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CF.m"; sourceTree = "<group>"; };
+		3F77879321E7624600347B1E /* UICollectionViewCell+CF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+CF.h"; sourceTree = "<group>"; };
+		3F77879421E7624600347B1E /* UICollectionViewCell+CF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+CF.m"; sourceTree = "<group>"; };
+		3F77879621E7625300347B1E /* UIImageView+CF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CF.h"; sourceTree = "<group>"; };
+		3F77879721E7625300347B1E /* UIImageView+CF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CF.m"; sourceTree = "<group>"; };
+		3F77879921E7627D00347B1E /* UIScrollView+CF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CF.h"; sourceTree = "<group>"; };
+		3F77879A21E7627D00347B1E /* UIScrollView+CF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CF.m"; sourceTree = "<group>"; };
+		3F77879C21E7629400347B1E /* UITableViewCell+CF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+CF.h"; sourceTree = "<group>"; };
+		3F77879D21E7629400347B1E /* UITableViewCell+CF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CF.m"; sourceTree = "<group>"; };
+		3F77879F21E762A900347B1E /* UITableViewHeaderFooterView+CF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewHeaderFooterView+CF.h"; sourceTree = "<group>"; };
+		3F7787A021E762A900347B1E /* UITableViewHeaderFooterView+CF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewHeaderFooterView+CF.m"; sourceTree = "<group>"; };
+		3F7787A221E762C800347B1E /* UITextField+CF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+CF.h"; sourceTree = "<group>"; };
+		3F7787A321E762C800347B1E /* UITextField+CF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CF.m"; sourceTree = "<group>"; };
+		3F7787A621E762E400347B1E /* UITextView+CF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+CF.h"; sourceTree = "<group>"; };
+		3F7787A721E762E400347B1E /* UITextView+CF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+CF.m"; sourceTree = "<group>"; };
+		3F7787A921E762FA00347B1E /* UIView+CF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CF.h"; sourceTree = "<group>"; };
+		3F7787AA21E762FA00347B1E /* UIView+CF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CF.m"; sourceTree = "<group>"; };
 		3F7DCF9620EB40480026602E /* CFNotificationComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFNotificationComponent.h; sourceTree = "<group>"; };
 		3F7DCF9720EB40480026602E /* CFNotificationComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFNotificationComponent.m; sourceTree = "<group>"; };
 		3F7DCF9D20EBA6E70026602E /* CFSortArrayComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFSortArrayComponent.h; sourceTree = "<group>"; };
@@ -429,6 +459,26 @@
 				3F19B8B9206DE603009C994D /* UIViewController+CFNavController.m */,
 				3F7DCFA920EDC20B0026602E /* NSMutableArray+CFChange.h */,
 				3F7DCFAA20EDC20B0026602E /* NSMutableArray+CFChange.m */,
+				3F77879021E7621D00347B1E /* UIButton+CF.h */,
+				3F77879121E7621D00347B1E /* UIButton+CF.m */,
+				3F77879321E7624600347B1E /* UICollectionViewCell+CF.h */,
+				3F77879421E7624600347B1E /* UICollectionViewCell+CF.m */,
+				3F77879621E7625300347B1E /* UIImageView+CF.h */,
+				3F77879721E7625300347B1E /* UIImageView+CF.m */,
+				3F77878D21E7620C00347B1E /* UILabel+CF.h */,
+				3F77878E21E7620C00347B1E /* UILabel+CF.m */,
+				3F77879921E7627D00347B1E /* UIScrollView+CF.h */,
+				3F77879A21E7627D00347B1E /* UIScrollView+CF.m */,
+				3F77879C21E7629400347B1E /* UITableViewCell+CF.h */,
+				3F77879D21E7629400347B1E /* UITableViewCell+CF.m */,
+				3F77879F21E762A900347B1E /* UITableViewHeaderFooterView+CF.h */,
+				3F7787A021E762A900347B1E /* UITableViewHeaderFooterView+CF.m */,
+				3F7787A221E762C800347B1E /* UITextField+CF.h */,
+				3F7787A321E762C800347B1E /* UITextField+CF.m */,
+				3F7787A621E762E400347B1E /* UITextView+CF.h */,
+				3F7787A721E762E400347B1E /* UITextView+CF.m */,
+				3F7787A921E762FA00347B1E /* UIView+CF.h */,
+				3F7787AA21E762FA00347B1E /* UIView+CF.m */,
 			);
 			path = CFCategory;
 			sourceTree = "<group>";
@@ -1050,13 +1100,17 @@
 				3F19B77E2062406B009C994D /* ListBackView.m in Sources */,
 				3F19B937206DE603009C994D /* NSString+CFJSONConversion.m in Sources */,
 				3F19B944206DE603009C994D /* PrefsAddressBook.m in Sources */,
+				3F77879221E7621D00347B1E /* UIButton+CF.m in Sources */,
 				3F648E7920DA599F00A2EDC3 /* MASForbearance.m in Sources */,
+				3F77878F21E7620C00347B1E /* UILabel+CF.m in Sources */,
 				3F19B93B206DE603009C994D /* UIView+CFFrame.m in Sources */,
 				3F19B77F2062406B009C994D /* ListViewController.m in Sources */,
 				3F19B78A206268C5009C994D /* ModelBase.m in Sources */,
+				3F77879E21E7629400347B1E /* UITableViewCell+CF.m in Sources */,
 				3F19B77720623E52009C994D /* DetailViewController.m in Sources */,
 				3F19B956206DE603009C994D /* CFFMDBSQLStatement.m in Sources */,
 				3F19B943206DE603009C994D /* BasePrefs.m in Sources */,
+				3F7787A121E762A900347B1E /* UITableViewHeaderFooterView+CF.m in Sources */,
 				3F19B935206DE603009C994D /* NSString+CFDetection.m in Sources */,
 				3F19B96B206DE603009C994D /* CFTextViewBase.m in Sources */,
 				3F19B95E206DE603009C994D /* CFHttpCache.m in Sources */,
@@ -1064,6 +1118,7 @@
 				3F19B95A206DE603009C994D /* CFHttpClickBase+CFClickBaseErrorConfig.m in Sources */,
 				3F648E6C20DA590D00A2EDC3 /* UINavigationController+TZPopGesture.m in Sources */,
 				3F19B95C206DE603009C994D /* CFHttpLogInClick.m in Sources */,
+				3F7787A421E762C800347B1E /* UITextField+CF.m in Sources */,
 				3F19B96A206DE603009C994D /* CFTextFieldBase.m in Sources */,
 				3F19B947206DE603009C994D /* PrefsMicrophone.m in Sources */,
 				3F24E3C7205CEDEC0019A0BE /* ViewController.m in Sources */,
@@ -1071,6 +1126,7 @@
 				3F19B949206DE603009C994D /* CFContactsComponent.m in Sources */,
 				3F19B94C206DE603009C994D /* YContactObjectManager.m in Sources */,
 				3F19B954206DE603009C994D /* CFFMDBModelToSQL.m in Sources */,
+				3F77879821E7625300347B1E /* UIImageView+CF.m in Sources */,
 				3F19B961206DE603009C994D /* HMFJSONResponseSerializerWithData.m in Sources */,
 				3F19B957206DE603009C994D /* CFFMDBSQLToModel.m in Sources */,
 				3F19B94F206DE603009C994D /* CFNavCustomButton.m in Sources */,
@@ -1089,6 +1145,9 @@
 				3F19B76F20623E3F009C994D /* LoginBackView.m in Sources */,
 				3F19B96D206DE603009C994D /* CFRouteComponent.m in Sources */,
 				3F648E7820DA599F00A2EDC3 /* NSArray+Sudoku.m in Sources */,
+				3F77879521E7624600347B1E /* UICollectionViewCell+CF.m in Sources */,
+				3F7787A821E762E400347B1E /* UITextView+CF.m in Sources */,
+				3F7787AB21E762FA00347B1E /* UIView+CF.m in Sources */,
 				3F19B942206DE603009C994D /* CFPermissionConfig.m in Sources */,
 				3F19B94E206DE603009C994D /* CFNavButtonBuilder.m in Sources */,
 				3F7DCF9820EB40480026602E /* CFNotificationComponent.m in Sources */,
@@ -1120,6 +1179,7 @@
 				3F19B96C206DE603009C994D /* CFViewBase.m in Sources */,
 				3F7DCF9F20EBA6E70026602E /* CFSortArrayComponent.m in Sources */,
 				3F19B77620623E52009C994D /* DetailBackView.m in Sources */,
+				3F77879B21E7627D00347B1E /* UIScrollView+CF.m in Sources */,
 				3F19B95F206DE603009C994D /* CFHttpConfiguration.m in Sources */,
 				3F648E6920DA590D00A2EDC3 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				3F19B93F206DE603009C994D /* UserAccount.m in Sources */,

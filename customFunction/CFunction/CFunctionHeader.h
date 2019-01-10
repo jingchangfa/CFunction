@@ -27,6 +27,16 @@
 #import "UIViewController+CFNavController.h"
 #import "UIViewController+CFRouteComponent.h"
 #import "UIView+CFFrame.h"
+#import "UIButton+CF.h"
+#import "UICollectionViewCell+CF.h"
+#import "UIImageView+CF.h"
+#import "UILabel+CF.h"
+#import "UIScrollView+CF.h"
+#import "UITableViewCell+CF.h"
+#import "UITableViewHeaderFooterView+CF.h"
+#import "UITextField+CF.h"
+#import "UITextView+CF.h"
+#import "UIView+CF.h"
 
 // view
 #import "CFViewBase.h"
