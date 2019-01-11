@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "CFNotificationComponent.h"// 通知封装
-
 @interface UIViewController (CFNavController)
 // 颜色
 - (void)setBackgroundColor:(UIColor *)backgroundColor;
