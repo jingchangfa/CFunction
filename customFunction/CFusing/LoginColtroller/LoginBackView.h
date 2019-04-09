@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginBackView : CFViewBase
+@interface LoginBackView : UIView
 @property (nonatomic,strong) UITextField *numberTextfiled;
 @property (nonatomic,strong) UITextField *passwordTextfiled;
-@property (nonatomic, strong) CFButtonBase *loginButton;
+@property (nonatomic, strong) UIButton *loginButton;
 @end

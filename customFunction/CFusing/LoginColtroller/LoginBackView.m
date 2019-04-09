@@ -9,7 +9,7 @@
 #import "LoginBackView.h"
 
 @implementation LoginBackView
-- (void)bankViewInit{
+- (void)jc_backViewInit{
     [self addSubview:self.numberTextfiled];
     [self addSubview:self.passwordTextfiled];
     [self addSubview:self.loginButton];
@@ -45,7 +45,7 @@ CF_LazyLoadingBlock(UITextField, passwordTextfiled, {
     passwordTextfiled.placeholder = @"密码";
     passwordTextfiled.backgroundColor = [UIColor redColor];
 })
-CF_LazyLoadingBlock(CFButtonBase, loginButton, {
+CF_LazyLoadingBlock(UIButton, loginButton, {
     NSString *normalTitle = @"登录";
     UIColor *backColor = CF_CUSTUM_COLOR(0x313131);
     [loginButton setTitle:normalTitle forState:UIControlStateNormal];

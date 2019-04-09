@@ -24,7 +24,7 @@
 @property (nonatomic, strong)CFNotificationComponent *notificationComponent;
 // 导航条按钮
 - (void)onBackButtonClicked;// 返回按钮的点击事件
-
+- (UIBarButtonItem *)addNavBackButtonByClickBlock:(void(^)(UIButton *button))block;
 - (UIBarButtonItem *)addNavBackButtonByImageName:(NSString *)imageName AndClickBlock:(void(^)(UIButton *button))block;
 - (UIBarButtonItem *)addNavLeftButtonByImageName:(NSString *)imageName AndClickBlock:(void(^)(UIButton *button))block;
 - (UIBarButtonItem *)addNavRightButtonByImageName:(NSString *)imageName AndClickBlock:(void(^)(UIButton *button))block;
@@ -35,9 +35,9 @@
 - (UIBarButtonItem *)addNavRightButtonByTitle:(NSString *)title AndTitleColor:(UIColor *)color AndClickBlock:(void(^)(UIButton *button))block;
 
 // 规范格式
-- (void)setColtro;// 设置控制器导航栏
-- (void)getModel;// 网络请求以及MV绑定
-- (void)bankViewInit;// V设置初始化
-- (void)notificationCallbackSetting;// 通知回调设置
-- (void)relayoutSubViewContent;// V 布局
+- (void)jc_setColtro;// 设置控制器导航栏
+- (void)jc_getModel;// 网络请求以及MV绑定
+- (void)jc_bankViewInit;// V设置初始化
+- (void)jc_notificationCallbackSetting;// 通知回调设置
+- (void)jc_relayoutSubViewContent;// V 布局
 @end

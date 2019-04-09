@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (CF)
-
+- (void)jc_backViewInit;
 @end
 
 NS_ASSUME_NONNULL_END

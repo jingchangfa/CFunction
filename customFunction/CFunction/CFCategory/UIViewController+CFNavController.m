@@ -69,6 +69,9 @@ static void *NotificationComponentKey = &NotificationComponentKey;
         [self dismissViewControllerAnimated:YES completion:NULL];
     }
 }
+- (UIBarButtonItem *)addNavBackButtonByClickBlock:(void(^)(UIButton *button))block{
+    return [self addNavBackButtonByImageName:@"nav_back" AndClickBlock:block];
+}
 
 - (UIBarButtonItem *)addNavBackButtonByImageName:(NSString *)imageName AndClickBlock:(void(^)(UIButton *button))block{
     @WeakObj(self);
@@ -169,7 +172,7 @@ static void *NotificationComponentKey = &NotificationComponentKey;
 #pragma mark 替换viewwillapp
 - (void)CFViewWillAppear:(BOOL)animated{
     [self CFViewWillAppear:animated];
-    SEL selector =  NSSelectorFromString(@"relayoutSubViewContent");
+    SEL selector =  NSSelectorFromString(@"jc_relayoutSubViewContent");
     if ([self respondsToSelector:selector]) {
         IMP imp = [self methodForSelector:selector];
         void (*function)(id, SEL) = (__typeof__(function))imp;
@@ -194,7 +197,7 @@ static void *NotificationComponentKey = &NotificationComponentKey;
 - (void)CFViewDidLoad{
     [self CFViewDidLoad];
     // 设置controler
-    SEL selectorColtro =  NSSelectorFromString(@"setColtro");
+    SEL selectorColtro =  NSSelectorFromString(@"jc_setColtro");
     if ([self respondsToSelector:selectorColtro]) {
         [self setBackgroundColor:[UIColor whiteColor]];
         IMP imp = [self methodForSelector:selectorColtro];
@@ -202,21 +205,21 @@ static void *NotificationComponentKey = &NotificationComponentKey;
         function(self, selectorColtro);
     }
     // 视图创建
-    SEL selectorView =  NSSelectorFromString(@"bankViewInit");
+    SEL selectorView =  NSSelectorFromString(@"jc_bankViewInit");
     if ([self respondsToSelector:selectorView]) {
         IMP imp = [self methodForSelector:selectorView];
         void (*function)(id, SEL) = (__typeof__(function))imp;
         function(self, selectorView);
     }
     // 数据获取
-    SEL selectorModel =  NSSelectorFromString(@"getModel");
+    SEL selectorModel =  NSSelectorFromString(@"jc_getModel");
     if ([self respondsToSelector:selectorModel]) {
         IMP imp = [self methodForSelector:selectorModel];
         void (*function)(id, SEL) = (__typeof__(function))imp;
         function(self, selectorModel);
     }
     // 通知回调设置
-    SEL selectorNotification =  NSSelectorFromString(@"notificationCallbackSetting");
+    SEL selectorNotification =  NSSelectorFromString(@"jc_notificationCallbackSetting");
     if ([self respondsToSelector:selectorNotification]) {
         IMP imp = [self methodForSelector:selectorNotification];
         void (*function)(id, SEL) = (__typeof__(function))imp;
@@ -239,18 +242,18 @@ static void *NotificationComponentKey = &NotificationComponentKey;
 }
 //// 规范格式
 // 设置控制器导航栏
-//- (void)setColtro{
+//- (void)jc_setColtro{
 //}
 // 网络请求以及MV绑定
-//- (void)getModel{
+//- (void)jc_getModel{
 //}
 // V设置初始化
-//- (void)bankViewInit{
+//- (void)jc_bankViewInit{
 //}
 // 通知回调设置
-//- (void)relayoutSubViewContent{
+//- (void)jc_notificationCallbackSetting{
 //}
-//- (void)relayoutSubViewContent{
+//- (void)jc_relayoutSubViewContent{
 //}// V 布局
 @end
 

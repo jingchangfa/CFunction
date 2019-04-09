@@ -21,15 +21,15 @@
     // Do any additional setup after loading the view.
 }
 #pragma mark controller-init
-- (void)setColtro{
+- (void)jc_setColtro{
     self.title = self.cf_titleValue;
     [self addNavBackButtonByTitle:@"去登录" AndTitleColor:[UIColor blackColor] AndClickBlock:nil];
 }
-- (void)bankViewInit{
+- (void)jc_bankViewInit{
     @WeakObj(self)
     [self.view addSubview:self.backView];
 }
-- (void)getModel{
+- (void)jc_getModel{
     @WeakObj(self)
 }
 #pragma mark http

@@ -24,10 +24,21 @@
 #define CF_SIZE_SCREEN_HEIGHT    (CF_SCREEN_HEIGHT/667)
 #define CF_SIZE_SCREEN_WIDTH     (CF_SCREEN_WIDTH/375)
 #define CF_BitMap_BY_SIZE(height) (((height)/2.0f)*CF_SIZE_SCREEN_WIDTH)//像素为单位
+//判断是否是ipad
+#define isPad ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+//判断iPhoneX
+#define IS_IPHONE_X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+//判断iPHoneXr
+#define IS_IPHONE_Xr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+//判断iPhoneXs
+#define IS_IPHONE_Xs ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+//判断iPhoneXs Max
+#define IS_IPHONE_Xs_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+//判断 全面屏
+#define IS_FULL_SCREEN (IS_IPHONE_X==YES || IS_IPHONE_Xr ==YES || IS_IPHONE_Xs== YES || IS_IPHONE_Xs_Max== YES)
 
-#define IS_IPHONEX (([[UIScreen mainScreen] bounds].size.height - 812) ? NO : YES)
-#define CF_NAV_VIEW_OFFSET ((IS_IPHONEX) ? (44) : (20))
-#define CF_TAB_HEIGHT      ((IS_IPHONEX) ? (83) : (49))
+#define CF_NAV_VIEW_OFFSET (IS_FULL_SCREEN ? (44) : (20))
+#define CF_TAB_HEIGHT      (IS_FULL_SCREEN ? (83) : (49))
 #define CF_NAV_HEIGHT      (44)
 // 懒加载
 #pragma mark  - ========== 懒加载  ================

@@ -12,7 +12,7 @@
 @end
 
 @implementation ListBackView
-- (void)bankViewInit{
+- (void)jc_backViewInit{
     
 }
 /*

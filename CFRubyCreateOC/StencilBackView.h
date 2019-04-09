@@ -7,8 +7,8 @@
 // 注意一定要pch文件中引用  #import "CFunctionHeader.h"
 
 
-#import "CFViewBase.h"
+#import <UIKit/UIKit.h>
 
-@interface StencilBackView : CFViewBase
+@interface StencilBackView : UIView
 
 @end

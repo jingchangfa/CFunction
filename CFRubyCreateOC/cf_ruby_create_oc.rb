@@ -7,7 +7,6 @@
   end
 
   def cf_ruby_create_oc name
-#    dir_path = '/Users/jing/Desktop/CFRubyCreateOC'
     dir_path = Dir.pwd
     controlelr_dir_path = dir_path + '/' + cf_dir_name(name)
     # 创建文件夹

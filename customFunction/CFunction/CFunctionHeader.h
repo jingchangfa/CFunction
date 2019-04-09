@@ -16,6 +16,7 @@
 #import "UIView+Forbearance.h"
 #import "NSArray+Sudoku.h"
 // 延展
+#import "UIButton+BlocksKit.h"
 #import "NSString+CFEncryption.h"
 #import "NSString+CFDetection.h"
 #import "NSString+CFJSONConversion.h"
@@ -37,18 +38,6 @@
 #import "UITextField+CF.h"
 #import "UITextView+CF.h"
 #import "UIView+CF.h"
-
-// view
-#import "CFViewBase.h"
-#import "CFButtonBase.h"
-#import "CFTableViewCellBase.h"
-#import "CFCollectionViewCellBase.h"
-#import "CFTableViewHeaderFooterViewBase.h"
-#import "CFImageViewBase.h"
-#import "CFLabelBase.h"
-#import "CFScrollViewBase.h"
-#import "CFTextViewBase.h"
-#import "CFTextFieldBase.h"
 
 // 宏
 #import "CFDefindHeader.h"

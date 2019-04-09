@@ -1,17 +1,17 @@
 //
-//  StencilBackView.m
+//  LoginBackView.m
 //  CF_RUBY_CREATE
 //
 //  Created by CF on 2018/3/20.
 //  Copyright © 2018年 jing. All rights reserved.
 //
 
-#import "StencilBackView.h"
-@interface StencilBackView ()
+#import "LoginBackView.h"
+@interface LoginBackView ()
 
 @end
 
-@implementation StencilBackView
+@implementation LoginBackView
 - (void)jc_backViewInit{
     
 }

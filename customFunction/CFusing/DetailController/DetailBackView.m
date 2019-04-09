@@ -12,7 +12,7 @@
 @end
 
 @implementation DetailBackView
-- (void)bankViewInit{
+- (void)jc_backViewInit{
     
 }
 /*

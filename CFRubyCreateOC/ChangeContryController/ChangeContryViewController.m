@@ -1,20 +1,20 @@
 //
-//  StencilViewController.m
+//  ChangeContryViewController.m
 //  CF_RUBY_CREATE
 //
 //  Created by CF on 2018/3/20.
 //  Copyright © 2018年 jing. All rights reserved.
 //
 
-#import "StencilViewController.h"
-#import "StencilBackView.h"
+#import "ChangeContryViewController.h"
+#import "ChangeContryBackView.h"
 
-@interface StencilViewController ()
-@property(nonatomic,strong) StencilBackView *backView;
+@interface ChangeContryViewController ()
+@property(nonatomic,strong) ChangeContryBackView *backView;
 
 @end
 
-@implementation StencilViewController
+@implementation ChangeContryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,7 +42,7 @@
 
 
 #pragma mark get
-CF_LazyLoadingBlock(StencilBackView, backView, {
+CF_LazyLoadingBlock(ChangeContryBackView, backView, {
     CGRect frame = self.view.bounds;
     frame.size.height -= (CF_NAV_HEIGHT+CF_NAV_VIEW_OFFSET);
     backView.frame = frame;

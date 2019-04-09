@@ -19,21 +19,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-- (void)setColtro{
+- (void)jc_setColtro{
     @WeakObj(self)
     self.title = @"登录";
     [self addNavRightButtonByTitle:@"注册" AndTitleColor:[UIColor blackColor] AndClickBlock:^(UIButton *button) {
         [selfWeak pushListController];
     }];
 }
-- (void)bankViewInit{
+- (void)jc_bankViewInit{
     @WeakObj(self)
     [self.view addSubview:self.backView];
-    [self.backView.loginButton setDidBlock:^(UIButton *button) {
+    [self.backView.loginButton bk_addEventHandler:^(UIButton * _Nonnull button) {
         [selfWeak httpLogin];
-    }];
+    } forControlEvents:UIControlEventTouchUpInside];
 }
-- (void)getModel{
+- (void)jc_getModel{
     [self longSaveModel];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         // 发送通知

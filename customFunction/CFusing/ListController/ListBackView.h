@@ -6,8 +6,8 @@
 //  Copyright © 2018年 jing. All rights reserved.
 //
 
-#import "CFViewBase.h"
+#import <UIKit/UIKit.h>
 
-@interface ListBackView : CFViewBase
+@interface ListBackView : UIView
 
 @end
