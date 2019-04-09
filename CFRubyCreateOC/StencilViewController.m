@@ -42,11 +42,15 @@
 
 
 #pragma mark get
-CF_LazyLoadingBlock(StencilBackView, backView, {
-    CGRect frame = self.view.bounds;
-    frame.size.height -= (CF_NAV_HEIGHT+CF_NAV_VIEW_OFFSET);
-    backView.frame = frame;
-})
+- (StencilBackView *)backView{
+    if (!_backView) {
+        CGRect frame = self.view.bounds;
+        frame.size.height -= (CF_NAV_HEIGHT+CF_NAV_VIEW_OFFSET);
+        StencilBackView *backView = [[StencilBackView alloc] initWithFrame:frame];
+        _backView = backView;
+    }
+    return _backView;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
